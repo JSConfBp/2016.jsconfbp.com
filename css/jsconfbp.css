@@ -1,6 +1,29 @@
 .mdl-layout {
-    background: #000 url('../images/background.jpg') center / cover;
+    background: #3580C2 url('../images/bg1080.jpg') center / cover;
 }
+@media only screen and (max-width: 320px) {
+    /* Small screen, non-retina */
+    .mdl-layout { background-image: url("../images/bg720.jpg"); }
+}
+@media only screen and (min-resolution: 2dppx) and (max-width: 320px) {
+    /* Small screen, retina */
+    .mdl-layout { background-image: url("../images/bg480x2.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+    /* Medium screen, non-retina */
+    .mdl-layout { background-image: url("../images/bg720.jpg"); }
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
+    /* Medium screen, retina */
+    .mdl-layout { background-image: url("../images/bg720x2.jpg"); }
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 539px) {
+    /* Large screen, retina */
+    .mdl-layout { background-image: url("../images/bg1080x2.jpg"); }
+}
+
+
+
 .mdl-layout .mdl-layout__header,
 .mdl-layout .mdl-layout__drawer-button {
     color: white;
