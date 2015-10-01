@@ -1,25 +1,31 @@
-.mdl-layout {
+.mdl-layout,
+.content-page .intro-bg {
     background: #3580C2 url('../images/bg1080.jpg') center / cover;
 }
 @media only screen and (max-width: 320px) {
     /* Small screen, non-retina */
-    .mdl-layout { background-image: url("../images/bg720.jpg"); }
+    .mdl-layout,
+    .content-page .intro-bg { background-image: url("../images/bg720.jpg"); }
 }
 @media only screen and (min-resolution: 2dppx) and (max-width: 320px) {
     /* Small screen, retina */
-    .mdl-layout { background-image: url("../images/bg480x2.jpg"); }
+    .mdl-layout,
+    .content-page .intro-bg { background-image: url("../images/bg480x2.jpg"); }
 }
 @media only screen and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, non-retina */
-    .mdl-layout { background-image: url("../images/bg720.jpg"); }
+    .mdl-layout,
+    .content-page .intro-bg { background-image: url("../images/bg720.jpg"); }
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, retina */
-    .mdl-layout { background-image: url("../images/bg720x2.jpg"); }
+    .mdl-layout,
+    .content-page .intro-bg { background-image: url("../images/bg720x2.jpg"); }
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 539px) {
     /* Large screen, retina */
-    .mdl-layout { background-image: url("../images/bg1080x2.jpg"); }
+    .mdl-layout,
+    .content-page .intro-bg { background-image: url("../images/bg1080x2.jpg"); }
 }
 
 
@@ -77,9 +83,8 @@
 }
 .content-page .mdl-layout .mdl-layout__content {
   background-color: #f8f8f8;
-  overflow-x: visible;
-  overflow-y: visible;
-  border-top: 5px solid #3580C2;
+
+
 }
 
 .content-page .intro-container {
@@ -89,11 +94,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 400px;
   background-color: rgba(0,0,0,.5);
+  border-bottom: 5px solid #3580C2;
+  z-index: 2;
+  position: relative;
 }
 .content-page .intro-container a {
   display: block;
@@ -105,10 +111,16 @@
 .content-page .intro h2 {
   font-size: 1.5em;
 }
-.content-page .is-small-screen .mdl-layout__content {
-  margin-top: 400px;
+.content-page .intro-bg {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  background-color: #3580C2;
+  z-index: 1;
 }
 
 .content-page .content-center {
   margin: 0 auto;
+
 }
