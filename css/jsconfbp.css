@@ -88,6 +88,11 @@
 }
 
 .content-page .intro-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.content-page .intro-content {
   display: -webkit-flex;
   -webkit-align-items: center;
   -webkit-justify-content: center;
@@ -101,7 +106,7 @@
   z-index: 2;
   position: relative;
 }
-.content-page .intro-container a {
+.content-page .intro-content a {
   display: block;
 }
 .content-page .intro {
