@@ -1,0 +1,54 @@
+.content {
+
+  .decoration {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    margin: 20px 0;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: -60%;
+      width: 100%;
+    }
+
+    img.airport {
+      top: auto;
+      bottom: -50%;
+    }
+
+    img.heroes {
+      top: auto;
+      bottom: -60%;
+    }
+
+    img.parlament {
+      top: auto;
+      bottom: -80%;
+    }
+
+    img.castle {
+      top: 0;
+    }
+
+    span.credit {
+      position: absolute;
+      right: 0;
+      bottom: 0px;
+      background: rgba(0,0,0,.6);
+      line-height: 12px;
+      border-radius: 3px 0 0 0;
+      padding: 0px 5px 4px;
+      display:inline-block;
+
+      a {
+        font-size: 11px;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+  }
+}

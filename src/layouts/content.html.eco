@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="content">
+	<h2 class=""><a href="<%= @document.url %>"><%- @document.title or @document.name %></a></h2>
+	<small class="date"><%= @document.date %></small>
+	<%- @content %>
+</div>

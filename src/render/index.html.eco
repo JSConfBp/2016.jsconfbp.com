@@ -1,0 +1,40 @@
+---
+layout: 'default'
+---
+<p class="text-centered">
+	<b>JSConf Budapest</b> is a JSConf family member <br/>
+	2-day non-profit for-the-community by-the-community<br/>
+	conference about JavaScript in Budapest, Hungary.
+</p>
+
+<!-- div class="section-header">
+	<h2><span class="left"></span>Speakers<span class="right"></span></h2>
+</div>
+
+<div class="content">
+	<div class="speakers clearfix">
+		<% for speaker in @getCollection('speakers').sortArray(date: -1): %>
+		<div class="speaker">
+			<img src="" width="90" height="90" />
+			<h3><a href="<%= speaker.url %>"><%- speaker.name %></a> <a href="#" class="twitter"><%- speaker.twitter %></a></h3>
+			<h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4>
+		</div>
+		<% end %>
+	</div>
+</div -->
+
+<div class="section-header">
+	<h2><span class="left"></span>News<span class="right"></span></h2>
+</div>
+
+<div class="content">
+	<div class="news clearfix">
+	<% for post in @getCollection('news').sortArray(date: -1): %>
+		<h3><a href="<%= post.url %>"><%- post.title or post.name %></a></h3>
+		<small class="date"><%- post.date %></small>
+		<p>
+			<%- post.lead %>
+		</p>
+	<% end %>
+	</div>
+</div>
