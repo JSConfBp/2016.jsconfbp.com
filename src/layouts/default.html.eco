@@ -43,14 +43,15 @@
 	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1412312612411866&amp;ev=PixelInitialized" /></noscript>
 </head>
 <body>
-	<%- @partial('header') %>
 
-	<div id="content">
-		<%- @content %>
-	</div>
-
-	<%- @partial('footer') %>
-
+	<%- @partial('nav') %>
+	<main>
+		<%- @partial('header') %>
+		<div id="content">
+			<%- @content %>
+		</div>
+		<%- @partial('footer') %>
+	</main>
 	<!-- DocPad Scripts + Our Own -->
 	<script type="text/paperscript" canvas="Trianglewave" src="/scripts/trianglewave.js"></script>
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>

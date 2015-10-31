@@ -50,6 +50,7 @@ docpadConfig =
 				'/vendor/log.js'
 				'/vendor/modernizr.js'
 				'/vendor/paper-full-min.js'
+				'/vendor/slideout.js'
 				'/scripts/script.js'
 			]
 

@@ -1,0 +1,17 @@
+<nav class="main" style="display:none;">
+  <div>
+    <span>JSConf Budapest 2016</span>
+    <ul>
+      <!-- li>Speakers</li>
+      <li>Location</li -->
+      <li><a href="<%- @getPath('sponsors.html','/') %>">Sponsors</a></li>
+      <li><a href="<%- @getPath('code-of-conduct.html','/') %>">Code of Conduct</a></li>
+      <li><a href="<%- @getPath('budapest-guide.html','/') %>">Budapest Guide</a></li>
+      <li><a href="<%- @getPath('about.html','/') %>">About</a></li>
+    </ul>
+    <span>Previous events</span>
+    <ul>
+      <li><a href="http://2015.jsconfbp.com">2015</a></li>
+    </ul>
+  </div>
+</nav>

@@ -1,9 +1,27 @@
+@import '_include_media';
+@import 'colors';
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	color: #011b28;
+	color: $black;
 	font-weight: 300;
 }
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@include media('<desktop') {
+	body {
+		font-size: .8em;
+	}
+	small.date {
+		font-size: .6em;
+	}
+}
+
 
 .clr:after {
   content: "";
@@ -15,6 +33,7 @@ body {
 	margin: 0 auto;
 	max-width: 980px;
 }
+
 
 small.date {
 	font-size: .7em;
@@ -38,7 +57,7 @@ h3, h4, h5 {
 }
 
 .content h2 {
-	color: #3580C2;
+	color: $blue;
 }
 
 a,
@@ -48,7 +67,7 @@ h3 a,
 h4 a,
 h5 a {
 	text-decoration: none;
-	color: #3580C2;
+	color: $blue;
 	font-weight: 600;
 }
 
@@ -87,8 +106,8 @@ b, strong {
 	box-sizing: border-box;
 	cursor: pointer;
 
-	color: #3580C2;
-	border-color: #3580C2;
+	color: $blue;
+	border-color: $blue;
 	text-decoration: none;
 }
 
@@ -102,15 +121,15 @@ b, strong {
 }
 
 .button.yellow {
-	background: #f3df49;
-	border-color: #f3df49;
-	color: #20201F;
+	background: $yellow;
+	border-color: $yellow;
+	color: $black;
 	font-weight: 700;
 }
 
 .button.blue {
-	background: #3580C2;
-	border-color: #3580C2;
+	background: $blue;
+	border-color: $blue;
 	color: #fff;
 }
 
@@ -120,169 +139,52 @@ b, strong {
 }
 
 .button.bordered.blue {
-	border-color: #3580C2;
-	color: #3580C2;
+	border-color: $blue;
+	color: $blue;
 }
 
 .button.bordered.yellow {
-	border-color: #f3df49;
-	color: #f3df49;
+	border-color: $yellow;
+	color: $yellow;
+}
+
+.button.bordered.green {
+	border-color: $green;
+	color: $green;
+}
+
+.button.bordered.red {
+	border-color: $red;
+	color: $red;
 }
 
 .blue {
-	color: #3580C2;
+	color: $blue;
 }
 .yellow {
-	color: #f3df49;
+	color: $yellow;
 }
 
+
+#cfpform {
+	margin-top: 20px;
+}
+
+@include media('<tablet') {
+	#cfpform {
+		margin-top: 20px;
+		width: 100%;
+		height: 2700px;
+	}
+}
 
 
 
 /* HEADER */
-
-#header {
-	background: #007ebf;
-	color: #fff;
-}
-
-#logo {
-	display: inline-block;
-  vertical-align: top;
-  width: 60px;
-  height: 60px;
-  margin-top: 4px;
-}
-
-#header .nav {
-	display: inline-block;
-	line-height: 40px;
-	margin-left: 30px;
-}
-
-#header .nav li {
-	position: relative;
-	display: inline-block;
-	padding: 0 15px;
-	cursor: pointer;
-	overflow: hidden;
-	vertical-align: top;
-	font-weight: 400;
-
-	transition: background .2s ease-out;
-}
-
-#header .nav li a {
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-}
-
-#header .nav li:hover {
-	background: rgba(255, 255, 255, .07);
-}
-
-#header .nav li:before {
-	display: block;
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	right: 0;
-	width: 0;
-	height: 0;
-	opacity: 0;
-	border-style: solid;
-	border-width: 80px 0 0 80px;
-	border-color: rgba(255, 255, 255, .03) transparent transparent transparent;
-
-	transition: opacity .2s ease-out;
-	transition-delay: .1s;
-}
-
-#header .nav li:hover:before {
-	opacity: 1;
-}
+@import 'header';
 
 /* TOP */
-
-#top {
-	position: relative;
-	z-index: 1;
-	height: 383px;
-	color: #000;
-	border-bottom: 2px solid #007EBF;
-}
-
-#top .content {
-	padding: 60px 0 0px;
-	text-align: center;
-	position: relative;
-	z-index: 10;
-	box-sizing: border-box;
-	height: 383px;
-	background:
-		radial-gradient(ellipse at 55% 40%, rgb(255, 255, 255) 0%,rgba(255, 255, 255,.5) 40%,rgba(53,128,194,0) 80%),
-		radial-gradient(ellipse at bottom center, rgb(255, 255, 255) 0%,rgba(255, 255, 255,.2) 40%,rgba(53,128,194,0) 60%);
-}
-#top .addition {
-	display: inline-block;
-	text-transform: uppercase;
-	font-size: 36px;
-	width: 380px;
-	margin-left: 199px;
-}
-
-#top .addition > * {
-	vertical-align: top;
-
-}
-
-#top .addition .sign {
-	font-size: 60px;
-	font-weight: 300;
-}
-
-#top h1,
-#top h2 {
-	font-weight: bold;
-	width: 180px;
-	display: inline-block;
-	text-align: left;
-	line-height: 36px;
-	margin: 0;
-}
-#top h1 {
-	font-size: 36px;
-	margin-top: 6px;
-}
-#top h2 {
-	font-size: 36px;
-}
-#top .jsconf {
-	font-size: 50px;
-	line-height: 0;
-}
-
-#top .addition svg {
-	width: 180px;
-	float: left;
-	margin-right: 10px;
-}
-
-#top .buttons {
-	margin-top: 45px;
-}
-
-#vis {
-	width: 100%;
-	height: 383px;
-	position: absolute;
-	top: 0;
-	z-index: 1;
-}
+@import 'top';
 
 /* CONTENT */
 
@@ -291,139 +193,18 @@ b, strong {
 	font-size: 1.5em;
 }
 
-#content .section-header {
-	margin: 90px 0 45px;
-	font-weight: bold;
-	font-size: 36px;
-	text-align: center;
-}
+@include media('<tablet') {
+  #content {
+  	padding: 50px 10px;
 
-#content .section-header h2 {
-	display: inline-block;
-	position: relative;
-	text-transform: uppercase;
-	color: #007ebf;
-}
-
-#content .section-header h2 span {
-	display: block;
-	position: absolute;
-	width: 84px;
-	height: 84px;
-	top: 50%;
-	margin-top: -42px;
-}
-
-#content .section-header h2 span:before,
-#content .section-header h2 span:after {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-style: solid;
-}
-
-#content .section-header .left {
-	left: -84px;
-}
-
-#content .section-header .left:before {
-	top: 0;
-	left: 0;
-	border-width: 42px 0 42px 42px;
-	border-color: transparent transparent transparent #007bff;
-	opacity: .2;
-}
-
-#content .section-header .left:after {
-	border-width: 0 42px 42px 42px;
-	border-color: transparent transparent #007bff transparent;
-	opacity: .05;
-	bottom: 0;
-	left: 0;
-}
-
-#content .section-header .right {
-	right: -84px;
-}
-
-#content .section-header .right:before {
-	top: 0;
-	left: 0;
-	border-width: 42px 42px 0 42px;
-	border-color: #007bff transparent transparent transparent;
-	opacity: .05;
-}
-
-#content .section-header .right:after {
-	border-width: 42px 42px 42px 0;
-	border-color: transparent #007bff transparent transparent;
-	opacity: .10;
-	bottom: 0;
-	right: 0;
-}
-
-/* SPEAKERS */
-
-.speaker {
-	float: left;
-	width: 50%;
-	padding-right: 20px;
-	margin-bottom: 20px;
-	box-sizing: border-box;
-}
-
-.speaker h3 {
-	font-weight: bold;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin-top: -5px;
-  margin-bottom: 20px;
-  color: #007ebf;
-}
-
-.speaker .twitter {
-	color: #969696;
-	font-weight: 300;
-	text-transform: none;
-	text-decoration: none;
-}
-
-.speaker .img {
-	position: relative;
-	background: #274049;
-	float: left;
-	margin-right: 20px;
-}
-
-.speaker .img:before,
-.speaker .img:after {
-	position: absolute;
-	content: "";
-	border-style: solid;
-}
-
-.speaker .img:before {
-	border-width: 0 12px 12px 0;
-	border-color: transparent #fff transparent transparent;
-	top: 0;
-	right: 0;
-}
-
-.speaker .img:after {
-	border-width: 12px 0 0 12px;
-	border-color: transparent transparent transparent #fff;
-	bottom: 0;
-	left: 0;
-}
-
-.speaker .title {
-	display: block;
-	font-weight: bold;
-	margin-top: 0px;
-	font-size: .8em;
+  }
 }
 
 
+@import 'section-header';
+
+// SPEAKERS
+@import 'speakers';
+
+// Budapest guide
 @import 'bpguide';

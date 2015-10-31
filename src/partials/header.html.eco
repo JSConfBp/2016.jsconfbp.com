@@ -1,15 +1,9 @@
 <div id="header">
   <div class="content">
-    <div id="logo"><%- @partial('wirelogo') %></div>
-    <ul class="nav">
-      <!-- li>Speakers</li>
-      <li>Location</li -->
-      <li><a href="<%- @getPath('sponsors.html','/') %>">Sponsors</a></li>
-      <li><a href="<%- @getPath('code-of-conduct.html','/') %>">Code of Conduct</a></li>
-      <li><a href="<%- @getPath('budapest-guide.html','/') %>">Budapest Guide</a></li>
-      <li><a href="<%- @getPath('about.html','/') %>">About</a></li>
-      <li><a href="http://2015.jsconfbp.com">2015</a></li>
-    </ul>
+    <div id="logo">
+      <span class="burger"></span>
+      <%- @partial('wirelogo') %>
+    </div>
   </div>
 </div>
 <div id="top">

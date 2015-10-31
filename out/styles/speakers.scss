@@ -1,0 +1,57 @@
+.speaker {
+	float: left;
+	width: 50%;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+
+	h3 {
+		font-weight: bold;
+	  text-transform: uppercase;
+	  font-size: 18px;
+	  margin-top: -5px;
+	  margin-bottom: 20px;
+	  color: $blue;
+	}
+	.twitter {
+		color: $gray;
+		font-weight: 300;
+		text-transform: none;
+		text-decoration: none;
+	}
+	.img {
+		position: relative;
+		background: $blue;
+		float: left;
+		margin-right: 20px;
+
+		&:before,
+		&:after {
+			position: absolute;
+			content: "";
+			border-style: solid;
+		}
+
+		&:before {
+			border-width: 0 12px 12px 0;
+			border-color: transparent $white transparent transparent;
+			top: 0;
+			right: 0;
+		}
+
+		&:after {
+			border-width: 12px 0 0 12px;
+			border-color: transparent transparent transparent $white;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	.img
+	.title {
+		display: block;
+		font-weight: bold;
+		margin-top: 0px;
+		font-size: .8em;
+	}
+}

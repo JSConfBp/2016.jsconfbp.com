@@ -16,11 +16,8 @@
     "h5bp"
   ],
   "author": "team@jsconfbp.com",
-  "maintainers": [
-  ],
-  "contributors": [
-  ],
-
+  "maintainers": [],
+  "contributors": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/JSConfBp/2016.jsconfbp.com"

@@ -2,4 +2,6 @@
 
 ### May 12-13, 2016
 
-coming soon
+JSConf Budapest is a JSConf family member
+2-day non-profit for-the-community by-the-community
+conference about JavaScript in Budapest, Hungary.
