@@ -4,6 +4,7 @@
     <ul>
       <!-- li>Speakers</li>
       <li>Location</li -->
+      <li><a href="<%- @getPath('call-for-proposals.html','/') %>">Call for Proposals</a></li>
       <li><a href="<%- @getPath('sponsors.html','/') %>">Sponsors</a></li>
       <li><a href="<%- @getPath('code-of-conduct.html','/') %>">Code of Conduct</a></li>
       <li><a href="<%- @getPath('budapest-guide.html','/') %>">Budapest Guide</a></li>
