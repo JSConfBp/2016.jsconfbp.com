@@ -1,5 +1,7 @@
 sudo: false
 language: node_js
+before_install:
+ - gem install sass
 node_js:
 - iojs
 cache:
