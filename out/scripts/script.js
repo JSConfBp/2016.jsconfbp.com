@@ -1,12 +1,5 @@
-var slideout = new Slideout({
-    'panel': document.querySelectorAll('main')[0],
-    'menu': document.querySelectorAll('nav.main')[0],
-    'padding': 256,
-    'tolerance': 70
+  document.querySelector('#logo').addEventListener('touchstart', function() {
+    $('body').toggleClass('cbp-spmenu-push-toright')
+    $('nav').toggleClass('cbp-spmenu-open')
   });
-
-
-  document.querySelector('.burger').addEventListener('click', function() {
-    slideout.toggle();
-  });
-  document.querySelectorAll('nav.main')[0].style.cssText = '';
+  document.querySelectorAll('nav')[0].style.cssText = '';

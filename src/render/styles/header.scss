@@ -183,6 +183,7 @@ nav {
 				padding: 0;
 				margin: 16px 0;
 				display: block;
+				line-height: 10px;
 
 				&:first-of-type {
 					padding: 0;
@@ -190,12 +191,14 @@ nav {
 				}
 
 				li {
-					display: inline;
+					display: inline-block;
+					width: 220px;
 					font-size: 1.2em;
 					padding: 10px 0;
 					border-bottom: 1px solid #303030;
 					margin-right: 16px;
 	    		padding-left: 32px;
+					line-height: 24px;
 
 					&:last-child {
 							border-bottom: none;
@@ -209,35 +212,49 @@ nav {
 		}
 	}
 
-
-
-	.slideout-menu {
-	  position: fixed;
-	  left: 0;
-	  top: 0;
-	  bottom: 0;
-	  right: 0;
-	  z-index: 0;
-	  width: 256px;
-	  overflow-y: auto;
-	  -webkit-overflow-scrolling: touch;
-	  display: none;
+	nav,
+	.cbp-spmenu {
+		position: fixed;
+	}
+	nav,
+	.cbp-spmenu-vertical {
+		width: 260px;
+		height: 100%;
+		top: 0;
+		z-index: 1000;
 	}
 
-	.slideout-panel {
-	  position: relative;
-	  z-index: 1;
+	nav,
+	.cbp-spmenu,
+	body,
+	.cbp-spmenu-push {
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	nav,
+	.cbp-spmenu-left {
+		left: -260px;
 	}
 
-	.slideout-open,
-	.slideout-open body,
-	.slideout-open .slideout-panel {
-	  overflow: hidden;
+	nav.cbp-spmenu-open,
+	.cbp-spmenu-left.cbp-spmenu-open {
+		left: 0px;
 	}
 
-	.slideout-open .slideout-menu {
-	  display: block;
+	body.cbp-spmenu-push-toright {
+		left: 260px;
+		overflow: hidden;
 	}
+
+	body,
+	.cbp-spmenu-push {
+		overflow-x: hidden;
+		position: relative;
+		left: 0;
+	}
+
+
 
 	#header .nav {
 		display: none;
