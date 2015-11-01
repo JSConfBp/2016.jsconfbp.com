@@ -180,6 +180,8 @@ function withinRadius (currentPoint, centerPoint, outerRadius, innerRadius) {
 }
 
 function onFrame (e) {
+  if (window.menuOpen) return;
+  
   mesh.map(function (tri, i) {
     if (tri.passive) {
       tri.JSCwaveProp[0] += e.delta * waveSpeed

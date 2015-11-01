@@ -55,9 +55,3 @@
 		font-size: .8em;
 	}
 }
-
-@include media('<tablet') {
-	.speaker {
-		min-height: 215px;
-	}
-}
