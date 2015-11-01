@@ -4,6 +4,10 @@
       <span class="burger"></span>
       <%- @partial('wirelogo') %>
     </div>
+    <div class="social">
+      <a class="twitter" href="https://twitter.com/jsconfbp">@jsconfbp on Twitter</a>
+      <a class="facebook" href="https://www.facebook.com/bp.jsconf">JSConf Budapest on Facebook</a>
+    </div>
   </div>
 </div>
 <div id="top">

@@ -186,6 +186,43 @@ b, strong {
 #header {
   height: 72px;
 }
+#header .social {
+  display: none;
+}
+
+.social {
+  height: 72px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.social a {
+  height: 72px;
+  width: 72px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  text-indent: -9999px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+.social a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 20px;
+  left: 20px;
+  background-image: url(/images/social.png);
+  background-size: auto 100%;
+}
+.social a.facebook::before {
+  background-position: -28px 0;
+}
+.social a:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
 
 nav {
   position: absolute;
@@ -257,10 +294,25 @@ nav div ul li:hover:before {
     height: 60px;
   }
 
+  .social {
+    height: 60px;
+  }
+  .social a {
+    height: 60px;
+    width: 60px;
+  }
+  .social a::before {
+    top: 16px;
+    left: 16px;
+  }
+
   nav {
     background: #20201F;
     height: auto;
     width: auto;
+  }
+  nav .social {
+    display: none;
   }
   nav div span {
     color: #969696;
