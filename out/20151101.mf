@@ -1,0 +1,7 @@
+CACHE MANIFEST
+# 2015-11-01 15:20
+/images/bg720.jpg
+/images/bg720x2.jpg
+/images/bg1080.jpg
+/images/bg1080x2.jpg
+/images/social.png

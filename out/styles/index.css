@@ -240,6 +240,7 @@ nav div ul {
   display: inline-block;
   line-height: 40px;
   padding-left: 0;
+  vertical-align: top;
 }
 nav div ul:first-of-type {
   margin-left: 30px;
@@ -260,7 +261,6 @@ nav div ul li a {
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  height: 100%;
 }
 nav div ul li a:hover {
   text-decoration: none;
