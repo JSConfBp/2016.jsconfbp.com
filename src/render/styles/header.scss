@@ -241,11 +241,13 @@ nav {
 	nav,
 	.cbp-spmenu,
 	body,
+	main,
 	.cbp-spmenu-push {
 		-webkit-transition: all 0.3s ease;
 		-moz-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 	}
+
 	nav,
 	.cbp-spmenu-left {
 		left: -260px;
@@ -267,11 +269,15 @@ nav {
 		position: relative;
 		left: 0;
 	}
-
+	main {
+		left: 0;
+	}
 	.cbp-spmenu-push-toright main {
 		position: fixed;
-		width: 100%;
+		left: 260px;
 	}
+
+
 
 	#header .nav {
 		display: none;

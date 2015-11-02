@@ -403,6 +403,7 @@ nav div ul li:hover:before {
   nav,
   .cbp-spmenu,
   body,
+  main,
   .cbp-spmenu-push {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -431,9 +432,13 @@ nav div ul li:hover:before {
     left: 0;
   }
 
+  main {
+    left: 0;
+  }
+
   .cbp-spmenu-push-toright main {
     position: fixed;
-    width: 100%;
+    left: 260px;
   }
 
   #header .nav {
