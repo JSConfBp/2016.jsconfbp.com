@@ -45,7 +45,9 @@
 #top .addition b {
 	font-weight: bold;
 	margin: 0 20px;
+	white-space: nowrap;
 }
+
 #top .addition a {
 	display: inline-block;
 }
@@ -108,14 +110,6 @@
   #top .addition svg {
     width: 130px;
 		margin: 0;
-  }
-  #top h1,
-  #top h2 {
-    display: block;
-    width: auto;
-    font-size: 28px;
-    text-align: center;
-    line-height: 28px;
   }
   #top .jsconf {
     font-size: 38px;

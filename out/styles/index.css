@@ -500,6 +500,7 @@ nav div ul li:hover:before {
 #top .addition b {
   font-weight: bold;
   margin: 0 20px;
+  white-space: nowrap;
 }
 
 #top .addition a {
@@ -563,15 +564,6 @@ nav div ul li:hover:before {
   #top .addition svg {
     width: 130px;
     margin: 0;
-  }
-
-  #top h1,
-  #top h2 {
-    display: block;
-    width: auto;
-    font-size: 28px;
-    text-align: center;
-    line-height: 28px;
   }
 
   #top .jsconf {
