@@ -360,17 +360,15 @@ nav div ul li:hover:before {
     display: inline-block;
     padding: 16px 0 0 32px;
   }
-  nav div ul {
-    padding: 0;
-    margin: 0 16px;
-    display: block;
-    line-height: 10px;
-  }
+  nav div ul,
   nav div ul:first-of-type {
     padding: 0;
     margin: 16px 0;
+    display: block;
+    line-height: 10px;
   }
-  nav div ul li {
+  nav div ul li,
+  nav div ul:first-of-type li {
     display: inline-block;
     width: 220px;
     font-size: 1.2em;
@@ -380,10 +378,12 @@ nav div ul li:hover:before {
     padding-left: 32px;
     line-height: 24px;
   }
-  nav div ul li:last-child {
+  nav div ul li:last-child,
+  nav div ul:first-of-type li:last-child {
     border-bottom: none;
   }
-  nav div ul li a {
+  nav div ul li a,
+  nav div ul:first-of-type li a {
     color: #FFFFFF;
   }
 
@@ -429,6 +429,11 @@ nav div ul li:hover:before {
     overflow-x: hidden;
     position: relative;
     left: 0;
+  }
+
+  .cbp-spmenu-push-toright main {
+    position: fixed;
+    width: 100%;
   }
 
   #header .nav {

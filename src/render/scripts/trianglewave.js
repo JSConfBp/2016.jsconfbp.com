@@ -7,12 +7,18 @@ largeSide,
 halfLargeSide,
 unitSize, drip = [],
 raster, mesh = [], restizeTime,
+noAnim = false,
 darken;
 
 var loaded = false;
 
 
 function init () {
+
+  var w = getViewport().width;
+  if (w < 720) {
+      noAnim = true;
+  }
 
   sqwidth = getSqSize();
   largeSide = hypotenuse(sqwidth);
@@ -67,7 +73,7 @@ function init () {
       }
       next = res;
     }
-    view.onFrame = onFrame;
+
   });
 }
 
@@ -123,9 +129,19 @@ function hypotenuse (a) {
   return Math.sqrt(Math.pow(a, 2) * 2);
 }
 
-function getImg () {
+function getViewport () {
   var ratio = window.devicePixelRatio &&  window.devicePixelRatio > 1 ? 2 : 1;
   var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  return {
+    ratio: ratio,
+    width: width
+  }
+}
+
+function getImg () {
+  var vp = getViewport();
+  var ratio = vp.ratio;
+  var width = vp.width;
   if (width > 1080) {
     return '/images/bg1080x2.jpg'
   } else if (width > 720 && ratio > 1) {
@@ -140,7 +156,7 @@ function getImg () {
 }
 
 function getSqSize () {
-  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  var width = getViewport().width;
   if (width > 900) {
     return 64;
   } else  {
@@ -164,7 +180,7 @@ function reset () {
 }
 
 function setSize () {
-  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  var width = getViewport().width;
   var c = document.getElementById('Trianglewave').parentNode;
   view.viewSize.width = c.clientWidth;
   view.viewSize.height = c.clientHeight;
@@ -185,6 +201,7 @@ function withinRadius (currentPoint, centerPoint, outerRadius, innerRadius) {
 }
 
 function onFrame (e) {
+  if (noAnim) return;
   if (window.menuOpen) return;
 
   mesh.map(function (tri, i) {

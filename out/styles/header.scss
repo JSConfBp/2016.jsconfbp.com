@@ -197,16 +197,12 @@ nav {
 				padding: 16px 0 0 32px;
 			}
 
-			ul {
+			ul,
+			ul:first-of-type  {
 				padding: 0;
-				margin: 0 16px;
+				margin: 16px 0;
 				display: block;
 				line-height: 10px;
-
-				&:first-of-type {
-					padding: 0;
-					margin: 16px 0;
-				}
 
 				li {
 					display: inline-block;
@@ -272,7 +268,10 @@ nav {
 		left: 0;
 	}
 
-
+	.cbp-spmenu-push-toright main {
+		position: fixed;
+		width: 100%;
+	}
 
 	#header .nav {
 		display: none;
