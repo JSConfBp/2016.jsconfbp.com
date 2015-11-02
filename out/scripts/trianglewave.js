@@ -1,6 +1,5 @@
 var waveSpeed = 1.8;
 var dripSpeed = 1.4;
-var bluemode = window.location.search.indexOf('blues') > -1;
 
 var sqwidth,
 largeSide,
@@ -29,14 +28,9 @@ function init () {
     darken = Shape.Rectangle(new Point(0,0), view.size);
     darken.bringToFront();
 
-    if (bluemode) {
-      darken.fillColor = '#3580C2';
-      darken.blendMode = 'multiply';
-      darken.opacity = 1;
-    } else {
-      darken.fillColor = '#00121b';
-      darken.opacity = .6;
-    }
+    darken.fillColor = '#3580C2';
+    darken.blendMode = 'multiply';
+    darken.opacity = 1;
 
     var startX = view.center.x - Math.ceil(view.center.x / largeSide) * largeSide;
     var next = [
@@ -104,15 +98,7 @@ function generateSquare (coords, line, mesh) {
   triangle1.opacity = wavePoint(center, line, 1)
   triangle1.JSCwaveProp = [center, line, 1]
   triangle1.passive = true;
-
-  if (bluemode) {
-    triangle1.fillColor='#3580C2';
-  } else {
-    triangle1.fillColor='white';
-    triangle1.blendMode = 'screen'
-    triangle1.insertBelow(darken)
-  }
-
+  triangle1.fillColor='#3580C2';
   triangle1.on('mouseenter', onMouseEnter)
 
   mesh.push(triangle1)
@@ -123,15 +109,7 @@ function generateSquare (coords, line, mesh) {
   triangle2.opacity = wavePoint(center, line+1, -1)
   triangle2.JSCwaveProp = [center, line+1, -1]
   triangle2.passive = true;
-
-  if (bluemode) {
-    triangle2.fillColor='#3580C2';
-  } else {
-    triangle2.fillColor='white';
-    triangle2.blendMode = 'screen'
-    triangle2.insertBelow(darken)
-  }
-
+  triangle2.fillColor='#3580C2';
   triangle2.on('mouseenter', onMouseEnter)
 
   mesh.push(triangle2)
