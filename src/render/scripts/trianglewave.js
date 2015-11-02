@@ -1,6 +1,7 @@
 
 var waveSpeed = 1.8;
 var dripSpeed = 1.4;
+var bluemode = window.location.search.indexOf('blues') > -1;
 
 var sqwidth,
 largeSide,
@@ -27,12 +28,16 @@ function init () {
     loaded = true;
 
     darken = Shape.Rectangle(new Point(0,0), view.size);
-    //darken.fillColor = '#3580C2'
-    darken.fillColor = '#00121b'
-    //darken.fillColor = '#18568c'
-    //darken.blendMode = 'multiply';
-    darken.opacity = .6;
-    darken.bringToFront()
+    darken.bringToFront();
+
+    if (bluemode) {
+      darken.fillColor = '#3580C2';
+      darken.blendMode = 'multiply';
+      darken.opacity = 1;
+    } else {
+      darken.fillColor = '#00121b';
+      darken.opacity = .6;
+    }
 
     var startX = view.center.x - Math.ceil(view.center.x / largeSide) * largeSide;
     var next = [
@@ -95,28 +100,38 @@ function generateSquare (coords, line, mesh) {
   var center = new Point(x-(halfLargeSide), y-(halfLargeSide))
 
   var triangle1 = new Path.Rectangle(center, unitSize);
-  triangle1.fillColor='white';
   triangle1.removeSegment(rand[0]); // 0
   triangle1.rotate(45);
-  triangle1.blendMode = 'screen'
-
   triangle1.opacity = wavePoint(center, line, 1)
   triangle1.JSCwaveProp = [center, line, 1]
   triangle1.passive = true;
-  triangle1.insertBelow(darken)
+
+  if (bluemode) {
+    triangle1.fillColor='#3580C2';
+  } else {
+    triangle1.fillColor='white';
+    triangle1.blendMode = 'screen'
+    triangle1.insertBelow(darken)
+  }
+
   triangle1.on('mouseenter', onMouseEnter)
 
   mesh.push(triangle1)
 
   var triangle2 = new Path.Rectangle(center, unitSize);
-  triangle2.fillColor='white';
   triangle2.removeSegment(rand[1]); // 2
   triangle2.rotate(45);
-  triangle2.blendMode = 'screen'
   triangle2.opacity = wavePoint(center, line+1, -1)
   triangle2.JSCwaveProp = [center, line+1, -1]
   triangle2.passive = true;
-  triangle2.insertBelow(darken)
+
+  if (bluemode) {
+    triangle2.fillColor='#3580C2';
+  } else {
+    triangle2.fillColor='white';
+    triangle2.blendMode = 'screen'
+    triangle2.insertBelow(darken)
+  }
 
   triangle2.on('mouseenter', onMouseEnter)
 
