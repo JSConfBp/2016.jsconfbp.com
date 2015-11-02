@@ -286,6 +286,7 @@ nav div ul li {
   position: relative;
   display: inline-block;
   padding: 0 15px;
+  font-style: 1.05em;
   cursor: pointer;
   overflow: hidden;
   vertical-align: top;
