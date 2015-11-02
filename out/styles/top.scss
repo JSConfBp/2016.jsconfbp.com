@@ -3,7 +3,6 @@
 	z-index: 1;
 	height: 383px;
 	color: $black;
-	border-bottom: 2px solid $blue;
 }
 
 #top .content {
@@ -13,21 +12,28 @@
 	z-index: 10;
 	box-sizing: border-box;
 	height: 383px;
-	background:
+	/*background:
 		radial-gradient(ellipse at 55% 40%, rgb(255, 255, 255) 0%,rgba(255, 255, 255,.5) 40%,rgba(53,128,194,0) 80%),
 		radial-gradient(ellipse at bottom center, rgb(255, 255, 255) 0%,rgba(255, 255, 255,.2) 40%,rgba(53,128,194,0) 60%);
+		*/
 }
+
 #top .addition {
-	display: inline-block;
+	display: block;
 	text-transform: uppercase;
 	font-size: 36px;
-	width: 380px;
-	margin-left: 199px;
+	color: $white;
 }
 
-#top .addition > * {
-	vertical-align: top;
 
+#top .addition > * {
+	vertical-align: middle;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+#top .addition .yellow {
+	color: #f3df49;
 }
 
 #top .addition .sign {
@@ -35,32 +41,20 @@
 	font-weight: 300;
 }
 
-#top h1,
-#top h2 {
+#top .addition b {
 	font-weight: bold;
-	width: 180px;
+	margin: 0 20px;
+}
+#top .addition a {
 	display: inline-block;
-	text-align: left;
-	line-height: 36px;
-  font-size: 36px;
-	margin: 0;
 }
-#top h1 {
-	margin-top: 6px;
-}
-#top .jsconf {
-	font-size: 50px;
-	line-height: 0;
-}
-
 #top .addition svg {
-	width: 180px;
-	float: left;
-	margin-right: 10px;
+	width: 130px;
+	margin-left: 20px;
 }
 
 #top .buttons {
-	margin-top: 45px;
+	margin-top: 70px;
 }
 
 #vis {
@@ -82,19 +76,33 @@
   }
 
   #top .content {
-    background: radial-gradient(ellipse at bottom center, #ffffff 0%, rgba(255, 255, 255, 0.6) 40%, rgba(53, 128, 194, 0) 80%);
+		padding-top: 40px;
+    //background: radial-gradient(ellipse at bottom center, #ffffff 0%, rgba(255, 255, 255, 0.6) 40%, rgba(53, 128, 194, 0) 80%);
   }
   #top .addition {
-  	width: 140px;
+  	width: 220px;
   	margin: 0 auto;
+		position: relative;
+		padding-top: 146px;
   }
+	#top .addition > * {
+		line-height: 40px;
+	}
   #top .addition a {
     display: block;
-    height: 140px;
+    height: 130px;
     margin-bottom: 16px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -65px;
   }
+	#top .addition .sign {
+		display: none;
+	}
   #top .addition svg {
-    width: 140px;
+    width: 130px;
+		margin: 0;
   }
   #top h1,
   #top h2 {

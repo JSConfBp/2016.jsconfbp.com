@@ -124,6 +124,7 @@ b, strong {
 
 .button.bordered {
   background: rgba(255, 255, 255, 0);
+  font-weight: 600;
 }
 
 .button.bordered.blue {
@@ -184,50 +185,74 @@ b, strong {
 }
 
 #header {
-  height: 72px;
+  height: 80px;
 }
 #header .social {
   display: none;
 }
 
 .social {
-  height: 72px;
+  height: 80px;
   position: absolute;
   top: 0;
   right: 0;
 }
 .social a {
-  height: 72px;
-  width: 72px;
+  height: 80px;
+  width: 80px;
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
   text-indent: -9999px;
+  z-index: 10;
   position: relative;
   transition: background .2s ease-out;
 }
-.social a::before {
+.social a::after {
   content: '';
   display: block;
   position: absolute;
   width: 28px;
   height: 28px;
-  top: 20px;
-  left: 20px;
+  top: 26px;
+  left: 24px;
   background-image: url(/images/social.png);
   background-size: auto 100%;
 }
-.social a.facebook::before {
+.social a.facebook::after {
   background-position: -28px 0;
 }
 .social a:hover {
   background: rgba(255, 255, 255, 0.07);
 }
+.social a:hover {
+  background: rgba(255, 255, 255, 0.07);
+  text-decoration: none;
+}
+.social a:before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-style: solid;
+  border-width: 80px 0 0 80px;
+  border-color: rgba(255, 255, 255, 0.03) transparent transparent transparent;
+  transition: opacity .2s ease-out;
+  transition-delay: .1s;
+}
+.social a:hover:before {
+  opacity: 1;
+}
 
 nav {
   position: absolute;
   width: 100%;
-  height: 72px;
+  height: 80px;
 }
 nav div {
   max-width: 980px;
@@ -238,7 +263,8 @@ nav div span {
 }
 nav div ul {
   display: inline-block;
-  line-height: 40px;
+  line-height: 80px;
+  margin: 0;
   padding-left: 0;
   vertical-align: top;
 }
@@ -261,6 +287,8 @@ nav div ul li a {
   text-decoration: none;
   display: inline-block;
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 nav div ul li a:hover {
   text-decoration: none;
@@ -273,7 +301,7 @@ nav div ul li:before {
   display: block;
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   right: 0;
   width: 0;
@@ -322,7 +350,7 @@ nav div ul li:hover:before {
   }
   nav div ul {
     padding: 0;
-    margin: 16px 0;
+    margin: 0 16px;
     display: block;
     line-height: 10px;
   }
@@ -431,7 +459,6 @@ nav div ul li:hover:before {
   z-index: 1;
   height: 383px;
   color: #20201F;
-  border-bottom: 2px solid #3580C2;
 }
 
 #top .content {
@@ -441,19 +468,27 @@ nav div ul li:hover:before {
   z-index: 10;
   box-sizing: border-box;
   height: 383px;
-  background: radial-gradient(ellipse at 55% 40%, #ffffff 0%, rgba(255, 255, 255, 0.5) 40%, rgba(53, 128, 194, 0) 80%), radial-gradient(ellipse at bottom center, #ffffff 0%, rgba(255, 255, 255, 0.2) 40%, rgba(53, 128, 194, 0) 60%);
+  /*background:
+  	radial-gradient(ellipse at 55% 40%, rgb(255, 255, 255) 0%,rgba(255, 255, 255,.5) 40%,rgba(53,128,194,0) 80%),
+  	radial-gradient(ellipse at bottom center, rgb(255, 255, 255) 0%,rgba(255, 255, 255,.2) 40%,rgba(53,128,194,0) 60%);
+  	*/
 }
 
 #top .addition {
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   font-size: 36px;
-  width: 380px;
-  margin-left: 199px;
+  color: #FFFFFF;
 }
 
 #top .addition > * {
-  vertical-align: top;
+  vertical-align: middle;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+#top .addition .yellow {
+  color: #f3df49;
 }
 
 #top .addition .sign {
@@ -461,34 +496,22 @@ nav div ul li:hover:before {
   font-weight: 300;
 }
 
-#top h1,
-#top h2 {
+#top .addition b {
   font-weight: bold;
-  width: 180px;
+  margin: 0 20px;
+}
+
+#top .addition a {
   display: inline-block;
-  text-align: left;
-  line-height: 36px;
-  font-size: 36px;
-  margin: 0;
-}
-
-#top h1 {
-  margin-top: 6px;
-}
-
-#top .jsconf {
-  font-size: 50px;
-  line-height: 0;
 }
 
 #top .addition svg {
-  width: 180px;
-  float: left;
-  margin-right: 10px;
+  width: 130px;
+  margin-left: 20px;
 }
 
 #top .buttons {
-  margin-top: 45px;
+  margin-top: 70px;
 }
 
 #vis {
@@ -505,22 +528,37 @@ nav div ul li:hover:before {
   }
 
   #top .content {
-    background: radial-gradient(ellipse at bottom center, #ffffff 0%, rgba(255, 255, 255, 0.6) 40%, rgba(53, 128, 194, 0) 80%);
+    padding-top: 40px;
   }
 
   #top .addition {
-    width: 140px;
+    width: 220px;
     margin: 0 auto;
+    position: relative;
+    padding-top: 146px;
+  }
+
+  #top .addition > * {
+    line-height: 40px;
   }
 
   #top .addition a {
     display: block;
-    height: 140px;
+    height: 130px;
     margin-bottom: 16px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -65px;
+  }
+
+  #top .addition .sign {
+    display: none;
   }
 
   #top .addition svg {
-    width: 140px;
+    width: 130px;
+    margin: 0;
   }
 
   #top h1,

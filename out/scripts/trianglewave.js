@@ -5,7 +5,8 @@ var sqwidth,
 largeSide,
 halfLargeSide,
 unitSize, drip = [],
-raster, mesh = [], restizeTime;
+raster, mesh = [], restizeTime,
+darken;
 
 var loaded = false;
 
@@ -23,6 +24,14 @@ function init () {
 
     raster.fitBounds(view.bounds, true);
     loaded = true;
+
+    darken = Shape.Rectangle(new Point(0,0), view.size);
+    //darken.fillColor = '#3580C2'
+    darken.fillColor = '#00121b'
+    //darken.fillColor = '#18568c'
+    //darken.blendMode = 'multiply';
+    darken.opacity = .6;
+    darken.bringToFront()
 
     var startX = view.center.x - Math.ceil(view.center.x / largeSide) * largeSide;
     var next = [
@@ -93,7 +102,7 @@ function generateSquare (coords, line, mesh) {
   triangle1.opacity = wavePoint(center, line, 1)
   triangle1.JSCwaveProp = [center, line, 1]
   triangle1.passive = true;
-
+  triangle1.insertBelow(darken)
   triangle1.on('mouseenter', onMouseEnter)
 
   mesh.push(triangle1)
@@ -106,6 +115,7 @@ function generateSquare (coords, line, mesh) {
   triangle2.opacity = wavePoint(center, line+1, -1)
   triangle2.JSCwaveProp = [center, line+1, -1]
   triangle2.passive = true;
+  triangle2.insertBelow(darken)
 
   triangle2.on('mouseenter', onMouseEnter)
 
@@ -153,6 +163,7 @@ function remove (item) {
 function reset () {
   view.onFrame = function () {}
   raster.remove();
+  darken.remove()
   mesh = mesh.map(remove);
   mesh = [];
   project.clear();
@@ -181,7 +192,7 @@ function withinRadius (currentPoint, centerPoint, outerRadius, innerRadius) {
 
 function onFrame (e) {
   if (window.menuOpen) return;
-  
+
   mesh.map(function (tri, i) {
     if (tri.passive) {
       tri.JSCwaveProp[0] += e.delta * waveSpeed
