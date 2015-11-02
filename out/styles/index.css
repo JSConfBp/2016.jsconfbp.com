@@ -178,6 +178,7 @@ b, strong {
   width: 60px;
   height: 60px;
   position: relative;
+  margin-top: 3px;
 }
 
 #logo .burger {
@@ -579,6 +580,10 @@ nav div ul li:hover:before {
 
   #top h2 span {
     white-space: nowrap;
+  }
+
+  #vis {
+    background-size: auto 100%;
   }
 }
 /* CONTENT */

@@ -9,6 +9,7 @@
   width: 60px;
   height: 60px;
 	position: relative;
+	margin-top: 3px;
 }
 
 #logo .burger {
@@ -89,7 +90,7 @@
 		}
 
 		@include menubg;
-		
+
 	}
 }
 
