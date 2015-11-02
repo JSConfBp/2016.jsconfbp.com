@@ -520,6 +520,9 @@ nav div ul li:hover:before {
   position: absolute;
   top: 0;
   z-index: 1;
+  background: url(/images/bg-init.jpg);
+  background-size: 100% auto;
+  background-position: center center;
 }
 
 @media (max-width: 767px) {
