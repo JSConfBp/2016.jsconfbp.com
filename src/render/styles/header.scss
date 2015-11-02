@@ -164,15 +164,16 @@ nav {
 		height: 60px;
 	}
 
-	.social {
+	#header .social {
 		height: 60px;
+		display: inline-block;
 
 		a {
 			height: 60px;
 			width: 60px;
 
-			&::before {
-				top: 16px;
+			&::after {
+				top: 18px;
 				left: 16px;
 			}
 		}

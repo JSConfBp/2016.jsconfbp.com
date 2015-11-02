@@ -332,15 +332,16 @@ nav div ul li:hover:before {
     height: 60px;
   }
 
-  .social {
+  #header .social {
     height: 60px;
+    display: inline-block;
   }
-  .social a {
+  #header .social a {
     height: 60px;
     width: 60px;
   }
-  .social a::before {
-    top: 16px;
+  #header .social a::after {
+    top: 18px;
     left: 16px;
   }
 
