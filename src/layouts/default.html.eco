@@ -15,7 +15,7 @@
 	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
 	<meta property="og:url" content="http://jsconfbp.com" />
 	<meta property="og:title" content="JSConf Budapest 2016" />
-	<meta property="og:image" content="http://jsconfbp.com/images/og_image2016.jpg" />
+	<meta property="og:image" content="http://jsconfbp.com/images/og_image.jpg" />
 	<meta property="og:description" content="JSConf Budapest is coming again! May 12-13, 2016, Budapest, Hungary" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
