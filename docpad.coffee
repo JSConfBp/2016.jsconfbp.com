@@ -20,7 +20,7 @@ docpadConfig =
 			]
 
 			# The default title of our website
-			title: "JSConf Budapest 2016"
+			title: "JSConf Budapest 2016, May 12-13."
 
 			# The website description (for SEO)
 			description: """
@@ -67,6 +67,9 @@ docpadConfig =
 			# if our document does not have it's own title, then we should just use the site's title
 			else
 				@site.title
+
+		getSiteTitle: ->
+			@site.title
 
 		# Get the prepared site/document description
 		getPreparedDescription: ->
