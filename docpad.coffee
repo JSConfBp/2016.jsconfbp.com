@@ -27,6 +27,8 @@ docpadConfig =
 				JSConf Budapest is coming again! May 12-13, 2016, Budapest, Hungary
 				"""
 
+			socialImage: "http://jsconfbp.com/images/og_image.jpg"
+
 			# The website keywords (for SEO) separated by commas
 			keywords: """
 				jsconf, javascript, jsconfbp, conference, budapest, jsconf budapest
@@ -81,6 +83,13 @@ docpadConfig =
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
+		getSocialShareImage: ->
+			# if we have a document title, then we should use that and suffix the site's title onto it
+			if @document.socialImage
+				@document.socialImage
+			# if our document does not have it's own title, then we should just use the site's title
+			else
+				@site.socialImage
 
 	# =================================
 	# Collections
