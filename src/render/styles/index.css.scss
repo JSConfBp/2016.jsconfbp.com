@@ -130,11 +130,37 @@ b, strong {
 	font-size: 1.5em;
 }
 
+.news p {
+	margin-bottom: 60px;
+}
+.content blockquote {
+	margin-bottom: 40px;
+	font-style: italic;
+	border-left: 4px solid $blue;
+	margin-left: 0;
+	padding-left: 40px;
+}
+
+.content blockquote cite {
+	font-size: 14px;
+	display: block;
+	text-align: right;
+	padding-top: 16px;
+}
+
 @include media('<tablet') {
   #content {
-  	padding: 50px 10px;
+  	padding: 50px 0;
 
+		p, h2, h3, h4, h5, small {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
   }
+
+	.content blockquote {
+		margin-left: 10px;
+	}
 }
 
 
@@ -145,3 +171,7 @@ b, strong {
 
 // Budapest guide
 @import 'bpguide';
+
+@import 'full-content';
+
+@import 'footer';

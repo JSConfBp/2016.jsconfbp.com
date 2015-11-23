@@ -1,0 +1,40 @@
+
+.full-content {
+	margin-bottom: 60px;
+}
+
+.full-content .img-wrapper {
+	height: 320px;
+	overflow: hidden;
+	position: relative;
+}
+
+.full-content .img-wrapper img {
+	width: 100%;
+	position: absolute;
+}
+
+.full-content.akvarium-in img {
+	top: -70px;
+}
+
+@include media('<tablet') {
+
+  .full-content .img-wrapper img {
+  	width: auto;
+    height: 100%;
+  	position: absolute;
+    top: 0;
+  }
+
+  .full-content.akvarium-in img {
+  	top: 0px;
+  }
+
+}
+
+@include media('>1200px') {
+  .full-content.akvarium-in img {
+  	top: -220px;
+  }
+}

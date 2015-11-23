@@ -76,7 +76,7 @@ docpadConfig =
 		# Get the prepared site/document description
 		getPreparedDescription: ->
 			# if we have a document description, then we should use that, otherwise use the site's description
-			@document.description or @site.description
+			@document.description or @document.lead or @site.description
 
 		# Get the prepared site/document keywords
 		getPreparedKeywords: ->
