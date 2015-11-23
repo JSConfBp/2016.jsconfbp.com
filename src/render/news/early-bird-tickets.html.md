@@ -24,4 +24,4 @@ The tickets will be available at these prices:
 
  * Early Bird tickets + 75% Diversity support <br />100 + 75 EUR + VAT + Fees = **233 EUR**
 
- * **Early Bird Combo!** JS + CSS, two conferences together<br />100 + 80 EUR + VAT + Fees = **239 EUR**
+ * **Early Bird Combo!** JS + CSS, two conferences together ([CSSConf Budapest](http://cssconfbp.rocks/))<br />100 + 80 EUR + VAT + Fees = **239 EUR**
