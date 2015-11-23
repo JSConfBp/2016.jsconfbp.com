@@ -34,6 +34,9 @@ body {
 	max-width: 980px;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
 
 small.date {
 	font-size: .7em;
@@ -46,7 +49,26 @@ small.date {
 
 .text-lead {
 	font-size: 30px;
+	
+	span {
+		display: inline-block;
+		max-width: 570px;
+	}
 }
+
+@include media('<tablet') {
+
+	.text-lead {
+		font-size: 20px;
+
+		span {
+			max-width: 100%;
+		}
+	}
+}
+
+
+
 h1, h2 {
 	font-size: 30px;
 	line-height: 40px;

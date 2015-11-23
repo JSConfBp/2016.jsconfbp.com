@@ -1,5 +1,5 @@
 <div id="footer">
-  JSConf Budapest welcomes everybody, please be nice to each other.<br />
+  JSConf Budapest welcomes everybody, <span class="nowrap">please be nice to each other.</span><br />
   <a href="<%- @getPath('code-of-conduct.html','/') %>">Code of Conduct</a> |
   <a href="<%- @getPath('sponsors.html','/') %>">Sponsoration</a> |
   <a href="<%- @getPath('about.html','/') %>">About</a> |
