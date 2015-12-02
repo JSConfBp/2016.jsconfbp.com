@@ -1,3 +1,0 @@
-<a class="button yellow bordered" href="<%- @getPath('call-for-proposals.html','/') %>">
-  Call For Proposals
-</a>
