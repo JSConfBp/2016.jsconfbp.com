@@ -23,6 +23,10 @@
 	text-decoration: none;
 }
 
+.button.large {
+  font-size: 24px;
+  padding: 16px 24px;
+}
 
 .button.bordered:hover {
 	background: rgba(255, 255, 255, .02);
