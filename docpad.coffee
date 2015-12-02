@@ -111,6 +111,8 @@ docpadConfig =
 		speakers: ->
 			@getCollection('documents').findAllLive({relativeOutDirPath: 'speakers'})
 
+		mcs: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: 'mcs'})
 	# =================================
 	# Environments
 

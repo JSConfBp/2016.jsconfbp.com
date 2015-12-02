@@ -9,21 +9,56 @@ layout: 'default'
 	</span>
 </p>
 
-<!-- div class="section-header">
-	<h2><span class="left"></span>Speakers<span class="right"></span></h2>
+<div class="section-header">
+	<h2 id="speakers"><span class="left"></span>Speakers<span class="right"></span></h2>
 </div>
 
 <div class="content">
 	<div class="speakers clearfix">
-		<% for speaker in @getCollection('speakers').sortArray(date: -1): %>
+		<% for speaker in @getCollection('speakers').sortArray(order: 1): %>
 		<div class="speaker">
-			<img src="" width="90" height="90" />
-			<h3><a href="<%= speaker.url %>"><%- speaker.name %></a> <a href="#" class="twitter"><%- speaker.twitter %></a></h3>
-			<h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4>
+			<div class="img">
+				<img src="/images/speaker-<%- speaker.twitter.replace('@','') %>.jpg" />
+			</div>
+			<h3>
+				<%- speaker.name %>
+				<!--a href="<%= speaker.url %>"><%- speaker.name %></a-->
+				<a href="https://twitter.com/<%- speaker.twitter.replace('@','') %>" class="twitter"><%- speaker.twitter %></a>
+			</h3>
+			<h4><a href="<%= speaker.company_url %>"><%= speaker.company %></a></h4>
+			<!-- h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4 -->
 		</div>
 		<% end %>
 	</div>
-</div -->
+
+	<p class="text-centered">
+		More speakers coming soon...
+	</p>
+
+</div>
+
+<div class="section-header">
+	<h2 id="mcs"><span class="left"></span>Masters of Ceremony<span class="right"></span></h2>
+</div>
+
+<div class="content">
+	<div class="mcs clearfix">
+		<% for speaker in @getCollection('mcs').sortArray(order: 1): %>
+		<div class="speaker">
+			<div class="img">
+				<img src="/images/speaker-<%- speaker.twitter.replace('@','') %>.jpg" />
+			</div>
+			<h3>
+				<%- speaker.name %>
+				<!--a href="<%= speaker.url %>"><%- speaker.name %></a-->
+				<a href="https://twitter.com/<%- speaker.twitter.replace('@','') %>" class="twitter"><%- speaker.twitter %></a>
+			</h3>
+			<h4><a href="<%= speaker.company_url %>"><%= speaker.company %></a></h4>
+			<!-- h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4 -->
+		</div>
+		<% end %>
+	</div>
+</div>
 
 <div class="section-header">
 	<h2 id="news"><span class="left"></span>News<span class="right"></span></h2>
