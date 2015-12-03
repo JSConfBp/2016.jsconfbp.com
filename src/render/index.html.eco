@@ -9,7 +9,7 @@ layout: 'default'
 	</span>
 </p>
 
-<div class="section-header">
+<!-- div class="section-header">
 	<h2 id="speakers"><span class="left"></span>Speakers<span class="right"></span></h2>
 </div>
 
@@ -22,11 +22,9 @@ layout: 'default'
 			</div>
 			<h3>
 				<%- speaker.name %>
-				<!--a href="<%= speaker.url %>"><%- speaker.name %></a-->
 				<a href="https://twitter.com/<%- speaker.twitter.replace('@','') %>" class="twitter"><%- speaker.twitter %></a>
 			</h3>
 			<h4><a href="<%= speaker.company_url %>"><%= speaker.company %></a></h4>
-			<!-- h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4 -->
 		</div>
 		<% end %>
 	</div>
@@ -50,15 +48,15 @@ layout: 'default'
 			</div>
 			<h3>
 				<%- speaker.name %>
-				<!--a href="<%= speaker.url %>"><%- speaker.name %></a-->
+
 				<a href="https://twitter.com/<%- speaker.twitter.replace('@','') %>" class="twitter"><%- speaker.twitter %></a>
 			</h3>
 			<h4><a href="<%= speaker.company_url %>"><%= speaker.company %></a></h4>
-			<!-- h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4 -->
+
 		</div>
 		<% end %>
 	</div>
-</div>
+</div -->
 
 <div class="section-header">
 	<h2 id="news"><span class="left"></span>News<span class="right"></span></h2>
