@@ -107,3 +107,23 @@
 		font-size: .8em;
 	}
 }
+
+.content.speaker {
+	width: auto;
+	float: none;
+	max-width: 720px;
+	min-height: 220px;
+
+	h3 {
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 16px;
+	}
+
+	.img {
+		img {
+			width: 220px;
+			height: 220px;
+		}
+	}
+}

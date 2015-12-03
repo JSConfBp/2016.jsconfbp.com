@@ -29,7 +29,8 @@ body {
   clear: both;
 }
 
-.content {
+.content,
+.content.speaker {
 	margin: 0 auto;
 	margin-bottom: 40px;
 	max-width: 980px;

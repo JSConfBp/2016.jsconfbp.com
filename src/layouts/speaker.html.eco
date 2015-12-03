@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="content speaker">
+
+	<div class="img">
+		<img src="/images/speaker-<%- @document.twitter.replace('@','') %>.jpg" />
+	</div>
+	<h3>
+		<%- @document.name %>
+		<!--a href="<%= @document.url %>"><%- @document.name %></a-->
+		<a href="https://twitter.com/<%- @document.twitter.replace('@','') %>" class="twitter"><%- @document.twitter %></a>
+	</h3>
+	<h4><a href="<%= @document.company_url %>"><%= @document.company %></a></h4>
+	<!-- h4 class="title"><a href="<%= @document.url %>"><%- @document.title %></a></h4 -->
+	<%- @content %>
+</div>
