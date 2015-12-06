@@ -127,3 +127,23 @@
 		}
 	}
 }
+
+
+@include media('<tablet') {
+	.speaker {
+		float: none;
+		width: auto;
+		min-height: 120px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+
+	.mcs {
+		text-align: left;
+		.speaker {
+			display: block;
+		}
+
+	}
+}

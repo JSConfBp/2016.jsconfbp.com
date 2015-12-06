@@ -10,6 +10,7 @@
 	position: relative;
 	text-transform: uppercase;
 	color: $blue;
+	box-sizing: border-box;
 }
 
 #content .section-header h2 span {
@@ -69,4 +70,24 @@
 	opacity: .10;
 	bottom: 0;
 	right: 0;
+}
+
+
+@include media('<tablet') {
+
+	#content .section-header h2 {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#content .section-header .left {
+		left: 0px;
+	}
+
+	#content .section-header .right {
+		right: 0px;
+	}
+
+
 }
