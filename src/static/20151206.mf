@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# 2015-12-06 10:00
+
+CACHE:
+/favicon.ico
+/images/bg720.jpg
+/images/bg720x2.jpg
+/images/bg1080.jpg
+/images/bg1080x2.jpg
+/images/social.png
+/images/bg-init-blue.jpg
+/images/speaker-seldo.jpg
+/images/speaker-noopkat.jpg
+/images/speaker-mishunov.jpg
+/images/speaker-jaffathecake.jpg
+
+NETWORK:
+*
