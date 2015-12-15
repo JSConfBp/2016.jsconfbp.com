@@ -5,14 +5,15 @@
       <li><a href="<%- @getPath('#speakers','/') %>">Speakers</a></li>
       <li><a href="<%- @getPath('#venue','/') %>">Venue</a></li>
       <li><a href="<%- @getPath('sponsors.html','/') %>">Sponsors</a></li>
-      <li><a href="<%- @getPath('budapest-guide.html','/') %>">Budapest Guide</a></li>
-      <li><a href="<%- @getPath('about.html','/') %>">About</a></li>
+      <li><a href="<%- @getPath('/news/ambassador-program.html','/') %>">Ambassador Program</a></li>
+      <li><a href="<%- @getPath('diversity-sponsorship.html','/') %>">Diversity Sponsorship</a></li>
+      <!-- li><a href="<%- @getPath('budapest-guide.html','/') %>">Budapest Guide</a></li -->
       <li><a href="<%- @getPath('code-of-conduct.html','/') %>">Code of Conduct</a></li>
     </ul>
-    <span>Previous events</span>
+    <!-- span>Previous events</span>
     <ul>
       <li><a href="http://2015.jsconfbp.com">2015</a></li>
-    </ul>
+    </ul -->
     <div class="social">
       <a class="twitter" href="https://twitter.com/jsconfbp">@jsconfbp on Twitter</a>
       <a class="facebook" href="https://www.facebook.com/bp.jsconf">JSConf Budapest on Facebook</a>
