@@ -3,6 +3,7 @@ layout: 'content'
 title: 'Starting our Ambassador Program'
 lead: "We aim to help developer communities out there, by our Ambassador Program, providing discounts for meetups and usergroups"
 socialImage: 'http://jsconfbp.com/images/og_image_ambassador.jpg'
+postdate: '2015-12-15'
 ---
 <p>
   We aim to help developer communities out there, by our Ambassador Program. We provide a <strong>€50 discount coupon code</strong> for every community, who applies. For every <strong>5 ticket</strong> sold with this coupon code, we provide <strong>a free ticket</strong> for the ambassador who applied for the coupon.

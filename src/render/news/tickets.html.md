@@ -3,6 +3,7 @@ layout: 'content'
 title: 'Regular Tickets sale starts 1st January 2016'
 lead: 'Regular Tickets are on sale from 1st January. Ticket price is 200 EUR + VAT + Fees = 269 EUR'
 socialImage: 'http://jsconfbp.com/images/og_image_tickets.jpg'
+postdate: '2015-12-31'
 ---
 [Regular Coder tickets are available for purchase](https://ti.to/jsconf-bp/jsconf-budapest-2016)
 

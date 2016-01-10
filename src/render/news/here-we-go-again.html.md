@@ -2,6 +2,7 @@
 layout: 'content'
 title: 'Here we go again!'
 lead: 'JSConf Budapest is coming in May 12-13, 2016!'
+postdate: '2015-10-01'
 ---
 JSConf Budapest is coming in May 12-13, 2016!
 

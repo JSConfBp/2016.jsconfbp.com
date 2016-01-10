@@ -3,6 +3,7 @@ layout: 'content'
 title: 'Early Bird Tickets are available from 6th December, 10:00 AM CET'
 lead: 'Early Bird Tickets are on sale from 6th December, 10:00 AM CET. Ticket price will be 100 EUR + VAT + Fees = 133 EUR'
 socialImage: 'http://jsconfbp.com/images/og_image_earlybird.jpg'
+postdate: '2015-11-29'
 ---
 Our very first batch of tickets will be available for sale from 6th December, 10:00 AM CET.
 <br />Follow us on [twitter](https://twitter.com/jsconfbp) for the exact announcement!

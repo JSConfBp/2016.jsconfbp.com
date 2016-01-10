@@ -4,6 +4,6 @@ layout: default
 
 <div class="content">
 	<h2 class=""><a href="<%= @document.url %>"><%- @document.title or @document.name %></a></h2>
-	<small class="date"><%= @document.date %></small>
+	<small class="date"><%= (new Date(@document.postdate)).toString().split(' ').slice(0,4).join(' ') %></small>
 	<%- @content %>
 </div>

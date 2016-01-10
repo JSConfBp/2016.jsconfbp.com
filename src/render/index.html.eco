@@ -66,9 +66,9 @@ layout: 'default'
 
 <div class="content">
 	<div class="news clearfix">
-	<% for post in @getCollection('news').sortArray(date: -1): %>
+	<% for post in @getCollection('news').sortArray(postdate: -1): %>
 		<h3><a href="<%= post.url %>"><%- post.title or post.name %></a></h3>
-		<small class="date"><%- post.date %></small>
+		<small class="date"><%- (new Date(post.postdate)).toString().split(' ').slice(0,4).join(' ') %></small>
 		<p>
 			<%- post.lead %>
 		</p>
