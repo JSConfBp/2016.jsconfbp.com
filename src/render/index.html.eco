@@ -18,11 +18,12 @@ layout: 'default'
 		<% for speaker in @getCollection('speakers').sortArray(order: 1): %>
 		<div class="speaker">
 			<div class="img">
-				<img src="/images/speaker-<%- speaker.twitter.replace('@','') %>.jpg" />
+				<a href="<%= speaker.url %>">
+					<img src="/images/speaker-<%- speaker.twitter.replace('@','') %>.jpg" />
+				</a>
 			</div>
 			<h3>
-				<%- speaker.name %>
-				<!--a href="<%= speaker.url %>"><%- speaker.name %></a-->
+				<a href="<%= speaker.url %>"><%- speaker.name %></a>
 				<a href="https://twitter.com/<%- speaker.twitter.replace('@','') %>" class="twitter"><%- speaker.twitter %></a>
 			</h3>
 			<h4><a href="<%= speaker.company_url %>"><%= speaker.company %></a></h4>
