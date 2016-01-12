@@ -19,7 +19,7 @@ layout: 'default'
 		<div class="speaker">
 			<div class="img">
 				<a href="<%= speaker.url %>">
-					<img src="/images/speaker-<%- speaker.twitter.replace('@','') %>.jpg" />
+					<img src="/images/speaker-<%- speaker.twitter.replace('@','').toLowerCase() %>.jpg" />
 				</a>
 			</div>
 			<h3>
