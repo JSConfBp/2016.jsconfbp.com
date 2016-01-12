@@ -4,7 +4,7 @@ layout: default
 <div class="content speaker">
 
 	<div class="img">
-		<img src="/images/speaker-<%- @document.twitter.replace('@','') %>.jpg" />
+		<img src="/images/speaker-<%- @document.twitter.replace('@','').toLowerCase() %>.jpg" />
 	</div>
 	<h3>
 		<%- @document.name %>
