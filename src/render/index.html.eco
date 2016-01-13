@@ -19,12 +19,12 @@ layout: 'default'
 		<div class="speaker">
 			<div class="img">
 				<a href="<%= speaker.url %>">
-					<img src="/images/speaker-<%- speaker.twitter.replace('@','').toLowerCase() %>.jpg" />
+					<img src="<%- @getSpeakerImageSrc(speaker) %>" />
 				</a>
 			</div>
 			<h3>
 				<a href="<%= speaker.url %>"><%- speaker.name %></a>
-				<a href="https://twitter.com/<%- speaker.twitter.replace('@','') %>" class="twitter"><%- speaker.twitter %></a>
+				<%- @getSpeakerTwitter(speaker) %>
 			</h3>
 			<h4><a href="<%= speaker.company_url %>"><%= speaker.company %></a></h4>
 			<!-- h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4 -->

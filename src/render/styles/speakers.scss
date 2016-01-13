@@ -31,6 +31,7 @@
 	padding-right: 20px;
 	margin-bottom: 20px;
 	box-sizing: border-box;
+	min-height: 160px;
 
 	h3 {
 		font-weight: bold;
@@ -139,11 +140,30 @@
 	.speaker {
 		float: none;
 		width: auto;
-		min-height: 120px;
+		min-height: 140px;
 		padding-right: 10px;
 		padding-left: 10px;
+
+		h3 {
+			font-size: 20px;
+		}
+
+		h4 {
+			font-size: 16px;
+		}
 	}
 
+	#content .content.speaker {
+		.img {
+			margin-bottom: 10px;
+		}
+		h3, h4, h5 {
+			margin-left: 0;
+		}
+		h5 {
+			margin-bottom: 20px;
+		}
+	}
 
 	.mcs {
 		text-align: left;

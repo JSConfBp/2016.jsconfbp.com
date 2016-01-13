@@ -91,6 +91,23 @@ docpadConfig =
 			else
 				@site.socialImage
 
+		getSpeakerTwitter: (page) ->
+			if page.twitter1? && page.twitter2?
+				"""
+					<a href=\"https://twitter.com/#{page.twitter1.replace('@', '')}\" class=\"twitter\">#{page.twitter1}</a> 
+					<a href=\"https://twitter.com/#{page.twitter2.replace('@', '')}\" class=\"twitter\">#{page.twitter2}</a>
+				"""
+			else
+				"""
+					<a href=\"https://twitter.com/#{page.twitter.replace('@', '')}\" class=\"twitter\">#{page.twitter}</a>
+				"""
+
+		getSpeakerImageSrc: (page) ->
+			if page.twitter1? && page.twitter2?
+				"/images/speaker-#{page.twitter1.replace('@', '').toLowerCase()}-#{page.twitter2.replace('@', '').toLowerCase()}.jpg"
+			else
+				"/images/speaker-#{page.twitter.replace('@', '').toLowerCase()}.jpg"
+
 	# =================================
 	# Collections
 

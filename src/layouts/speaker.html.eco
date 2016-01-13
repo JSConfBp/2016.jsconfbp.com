@@ -4,12 +4,12 @@ layout: default
 <div class="content speaker">
 
 	<div class="img">
-		<img src="/images/speaker-<%- @document.twitter.replace('@','').toLowerCase() %>.jpg" />
+		<img src="<%- @getSpeakerImageSrc(@document) %>" />
 	</div>
 	<h3>
 		<%- @document.name %>
 		<!--a href="<%= @document.url %>"><%- @document.name %></a-->
-		<a href="https://twitter.com/<%- @document.twitter.replace('@','') %>" class="twitter"><%- @document.twitter %></a>
+		<%- @getSpeakerTwitter(@document) %>
 	</h3>
 	<h4><a href="<%= @document.company_url %>"><%= @document.company %></a></h4>
 	<h5><%= @document.country %></h5>
