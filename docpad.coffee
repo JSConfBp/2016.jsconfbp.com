@@ -58,6 +58,8 @@ docpadConfig =
 
 		# -----------------------------
 		# Helper Functions
+		getUrl: (document) ->
+			return @site.url + (document.url or document.get?('url'))
 
 		# Get the prepared site/document title
 		# Often we would like to specify particular formatting to our page's title
@@ -94,7 +96,7 @@ docpadConfig =
 		getSpeakerTwitter: (page) ->
 			if page.twitter1? && page.twitter2?
 				"""
-					<a href=\"https://twitter.com/#{page.twitter1.replace('@', '')}\" class=\"twitter\">#{page.twitter1}</a> 
+					<a href=\"https://twitter.com/#{page.twitter1.replace('@', '')}\" class=\"twitter\">#{page.twitter1}</a>
 					<a href=\"https://twitter.com/#{page.twitter2.replace('@', '')}\" class=\"twitter\">#{page.twitter2}</a>
 				"""
 			else
