@@ -31,11 +31,6 @@ layout: 'default'
 		</div>
 		<% end %>
 	</div>
-
-	<p class="text-centered">
-		More speakers coming soon...
-	</p>
-
 </div>
 
 <div class="section-header">
