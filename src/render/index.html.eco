@@ -56,6 +56,30 @@ layout: 'default'
 	</div>
 </div>
 
+
+<div class="section-header">
+	<h2 id="workshops"><span class="left"></span>Workshops<span class="right"></span></h2>
+</div>
+
+<div class="content">
+	<div class="workshops clearfix">
+		<% for workshop in @getCollection('workshops').sortArray(order: 1): %>
+		<div class="workshop">
+			<div class="img">
+				<img src="<%- workshop.org_image %>" />
+			</div>
+			<h3>
+				<a href="<%= workshop.url %>"><%- workshop.title %></a>
+			</h3>
+			<h4>by <a href="<%= workshop.org_url %>"><%= workshop.org_name %></a></h4>
+			<p>
+				<%= workshop.lead %>
+			</p>
+		</div>
+		<% end %>
+	</div>
+</div>
+
 <div class="section-header">
 	<h2 id="news"><span class="left"></span>News<span class="right"></span></h2>
 </div>

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="content workshop">
+
+
+	<div class="org">
+		<h2 class=""><a href="<%= @document.url %>"><%- @document.title or @document.name %></a></h2>
+
+		<h3>
+			By <a href="<%- @document.org_url %>" target="_blank"><%- @document.org_name %></a>
+			<a href="https://twitter.com/<%- @document.org_twitter.replace('@', '') %>" class="twitter" target="_blank"><%- @document.org_twitter %></a>
+		</h3>
+		<h4>
+			Location: <a href="<%- @document.location_url %>" target="_blank"><%- @document.location_name %></a>
+			(<a href="<%- @document.location_map_url %>" target="_blank">Show on map</a>)
+		</h4>
+
+		<a href="<%- @document.apply_url %>" class="button blue bordered">Sign up now!</a>
+		<div class="img">
+			<img src="<%- @document.org_image %>" />
+		</div>
+
+	</div>
+
+
+	<%- @content %>
+
+
+</div>

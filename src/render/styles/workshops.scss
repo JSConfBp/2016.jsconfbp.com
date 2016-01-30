@@ -1,0 +1,76 @@
+
+
+
+
+.workshop {
+
+
+  .org {
+    padding-left: 200px;
+    position: relative;
+    z-index: 1;
+    min-height: 191px;
+    margin-bottom: 22px;
+
+    h2 {
+      text-transform: uppercase;
+      a {
+        color: $red;
+      }
+    }
+
+    h3,
+    h4 {
+      font-size: .9em;
+      a {
+        font-weight: 400;
+      }
+    }
+
+    h3 {
+      a.twitter {
+        color: $gray;
+      }
+    }
+    h4 {
+      margin-bottom: 27px;
+    }
+    .button {
+      margin-left: 0;
+    }
+  }
+
+  .img {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    display: inline-block;
+
+
+    @include img_dash();
+
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
+
+
+.workshops .workshop {
+  position: relative;
+  min-height: 120px;
+  margin-bottom: 22px;
+  padding-left: 142px;
+
+  .img {
+
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+
+}

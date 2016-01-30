@@ -132,6 +132,10 @@ docpadConfig =
 
 		mcs: ->
 			@getCollection('documents').findAllLive({relativeOutDirPath: 'mcs'})
+
+		workshops: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: 'workshops'})
+
 	# =================================
 	# Environments
 
