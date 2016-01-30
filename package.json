@@ -39,6 +39,8 @@
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
+    "watch": "node_modules/docpad/bin/docpad run",
+    "generate": "node_modules/docpad/bin/docpad generate",
     "deploy": "node_modules/.bin/docpad deploy-ghpages --silent --env static"
   }
 }
