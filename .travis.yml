@@ -25,7 +25,7 @@ after_success: |
   fi
 env:
   global:
-  - DEPLOY_BRANCH="master"
+  - DEPLOY_BRANCH="live"
   - DEPLOY_NAME="necccc"
   - DEPLOY_EMAIL="nec@shell8.net"
   - secure: ovqXKyl1VIaBJgftdh2mfgeOOV/Eq7eLXEtaAqafyhFF+LsI+oKWnjeyVTGDtmLRoGCMl0EzqOfclbbMEgg7rzKjiymGGvUfh2kMHQAEKg8rupFFtk/36S4AJZ+AADv+G7KRrW6VWkpwNasmUmKqVcCUYeuz2pZkeeIMtRCZcmSLnTBa0mRJMdOPTsFCGD0XYqUEvyr5ehWKu0izQzjS0vz3eqhj5LabZJ5TBGzOKUl0xwpJSllFKBMCeSrIKqFwxbsirML0bnEOT6pMDbRqZzkdAnWfIiOrokaCHkkY1Z/5iOHgx0F0Z1Q1ds0Qi1yWfVEDJnTauRvA04tdwvy7c5zKP7gXd6ZEJKeLCKaHO5Xmce72dOSebaCRmFbIrCyv+IwA/WhU54RoLC+jUyx+FGPJB3isxAfCI7UYgJGuAv8dr9ghK4Eup6BFNFb/RnzPakHX6PsHVwHcicMphuIzFq4IhaP2yy4RVf+xWioNhjivvo8s136aQe4sZBWMpURvIfY3zAKBOfPv510xXicsYq3HK8vYtHzRu1mWAGWOrURw0K8JuXmiN7KRqkyUuwse7IY7hgnXpA5d0bIwhAAmKWzhAJDGXm+bXqJXJSm3rGg6JXZ5Rw8JzPYFlWy+fMNXX2loc1a8PKNu907S1QoCpS9xIl4/iA8gHc+vviqAEo8=
