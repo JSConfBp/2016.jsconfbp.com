@@ -25,11 +25,38 @@
 
 }
 
-.speaker {
+
+.speakers > div:nth-child(even) {
 	float: left;
+	padding-left: 20px;
+
+	.img {
+		float: left;
+		margin-right: 16px;
+		margin-left: 0;
+	}
+}
+
+
+
+.speakers > div:nth-child(odd) {
+	float: left;
+	padding-right: 20px;
+
+
+	.img {
+		float: right;
+		margin-right: 0;
+		margin-left: 16px;
+	}
+}
+
+
+.speaker {
+
 	width: 50%;
   min-width: 325px;
-	padding-right: 20px;
+
 	margin-bottom: 20px;
 	box-sizing: border-box;
 	min-height: 175px;
@@ -130,8 +157,11 @@
 
 		&.title,
 		&.title a {
-			color: $red;
+			clear: both;
 			margin-top: 20px;
+			color: $black;
+			text-transform: none;
+			font-weight: 700;
 		}
 	}
 
