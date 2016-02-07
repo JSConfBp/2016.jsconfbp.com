@@ -71,7 +71,7 @@ layout: 'default'
 			<h3>
 				<a href="<%= workshop.url %>"><%- workshop.title %></a>
 			</h3>
-			<h4>by <a href="<%= workshop.org_url %>"><%= workshop.org_name %></a></h4>
+			<%- @getIndexWorkshopOrg(workshop) %>
 			<p>
 				<%= workshop.lead %>
 			</p>

@@ -110,6 +110,61 @@ docpadConfig =
 			else
 				"/images/speaker-#{page.twitter.replace('@', '').toLowerCase()}.jpg"
 
+		getWorkshopOrg: (page) ->
+			if page.org_name_2? && page.org_name?
+				"""
+				<h3> By
+					<a href=\"#{page.org_url}\" target=\"_blank\">#{page.org_name}</a>
+					<a href=\"https://twitter.com/#{page.org_twitter.replace('@', '')}\" class=\"twitter\" target=\"_blank\">
+						#{page.org_twitter}
+					</a>
+					and
+					<a href=\"#{page.org_url_2}\" target=\"_blank\">#{page.org_name_2}</a>
+					<a href=\"https://twitter.com/#{page.org_twitter_2.replace('@', '')}\" class=\"twitter\" target=\"_blank\">
+						#{page.org_twitter_2}
+					</a>
+				</h3>
+				"""
+			else
+				"""
+				<h3> By
+					<a href=\"#{page.org_url}\" target=\"_blank\">#{page.org_name}</a>
+					<a href=\"https://twitter.com/#{page.org_twitter.replace('@', '')}\" class=\"twitter\" target=\"_blank\">
+						#{page.org_twitter}
+					</a>
+				</h3>
+				"""
+
+		getIndexWorkshopOrg: (page) ->
+			if page.org_name_2? && page.org_name?
+				"""
+				<h4> By
+					<a href=\"#{page.url}\" target=\"_blank\">#{page.org_name}</a>
+					and
+					<a href=\"#{page.url}\" target=\"_blank\">#{page.org_name_2}</a>
+				</h4>
+				"""
+			else
+				"""
+				<h4> By
+					<a href=\"#{page.url}\" target=\"_blank\">#{page.org_name}</a>
+				</h4>
+				"""
+		getWorkshopLocation: (page) ->
+			if page.location_name == 'TBA'
+				"""
+				<h4>
+					Location: TBA
+				</h4>
+				"""
+			else
+				"""
+				<h4>
+					Location: <a href=\"#{page.location_url}\" target=\"_blank\">#{page.location_name}</a>
+					(<a href=\"#{page.location_map_url}\" target=\"_blank\">Show on map</a>)
+				</h4>
+				"""
+
 	# =================================
 	# Collections
 
