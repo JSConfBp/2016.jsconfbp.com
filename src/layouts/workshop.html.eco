@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="content workshop">
+
+
+	<div class="org">
+		<h2 class=""><a href="<%= @document.url %>"><%- @document.title or @document.name %></a></h2>
+
+		<div class="img">
+			<img src="<%- @document.org_image %>" />
+		</div>
+
+		<%- @getWorkshopOrg(@document) %>
+
+		<%- @getWorkshopLocation(@document) %>
+
+		<a href="<%- @document.apply_url %>" class="button blue bordered">
+			<%- @document.apply_text %>
+		</a>
+
+	</div>
+
+
+	<%- @content %>
+
+
+</div>

@@ -28,7 +28,7 @@
 .speaker {
 	float: left;
 	width: 33%;
-  	min-width: 325px; 
+  min-width: 325px;
 	padding-right: 20px;
 	margin-bottom: 20px;
 	box-sizing: border-box;
@@ -80,26 +80,7 @@
 		float: left;
 		margin-right: 8px;
 
-		&:before,
-		&:after {
-			position: absolute;
-			content: "";
-			border-style: solid;
-		}
-
-		&:before {
-			border-width: 0 12px 12px 0;
-			border-color: transparent $white transparent transparent;
-			top: 0;
-			right: 0;
-		}
-
-		&:after {
-			border-width: 12px 0 0 12px;
-			border-color: transparent transparent transparent $white;
-			bottom: 0;
-			left: 0;
-		}
+		@include img_dash();
 
 		img {
 			width: 120px;
