@@ -3,7 +3,8 @@
     <span>JSConf Budapest 2016</span>
     <ul>
       <li><a href="<%- @getPath('#speakers','/') %>">Speakers</a></li>
-      <li><a href="<%- @getPath('#venue','/') %>">Venue</a></li>
+      <li><a href="<%- @getPath('#workshops','/') %>">Workshops</a></li>
+      <!-- li><a href="<%- @getPath('#venue','/') %>">Venue</a></li -->
       <li><a href="<%- @getPath('sponsors.html','/') %>">Sponsors</a></li>
       <li><a href="<%- @getPath('/news/ambassador-program.html','/') %>">Ambassador Program</a></li>
       <li><a href="<%- @getPath('diversity-sponsorship.html','/') %>">Diversity Sponsorship</a></li>
