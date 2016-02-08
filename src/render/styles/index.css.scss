@@ -187,11 +187,35 @@ b, strong {
 	}
 }
 
+@mixin img_dash() {
+	&:before,
+	&:after {
+		position: absolute;
+		content: "";
+		border-style: solid;
+	}
+
+	&:before {
+		border-width: 0 12px 12px 0;
+		border-color: transparent $white transparent transparent;
+		top: 0;
+		right: 0;
+	}
+
+	&:after {
+		border-width: 12px 0 0 12px;
+		border-color: transparent transparent transparent $white;
+		bottom: 0;
+		left: 0;
+	}
+}
 
 @import 'section-header';
 
 // SPEAKERS
 @import 'speakers';
+
+@import 'workshops';
 
 // Budapest guide
 @import 'bpguide';
