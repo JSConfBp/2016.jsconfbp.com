@@ -13,6 +13,11 @@ layout: default
 	</h3>
 	<h4><a href="<%= @document.company_url %>"><%= @document.company %></a></h4>
 	<h5><%= @document.country %></h5>
-	<!-- h4 class="title"><a href="<%= @document.url %>"><%- @document.title %></a></h4 -->
-	<%- @content %>
+
+	<h3 class="title"><a href="<%= @document.url %>"><%- @document.title %></a></h3>
+
+	<div class="description">
+		<%- @content %>
+	</div>
+
 </div>

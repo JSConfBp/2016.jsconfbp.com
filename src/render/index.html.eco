@@ -22,12 +22,13 @@ layout: 'default'
 					<img src="<%- @getSpeakerImageSrc(speaker) %>" />
 				</a>
 			</div>
+
 			<h3>
 				<a href="<%= speaker.url %>"><%- speaker.name %></a>
 				<%- @getSpeakerTwitter(speaker) %>
 			</h3>
-			<h4><a href="<%= speaker.company_url %>"><%= speaker.company %></a></h4>
-			<!-- h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4 -->
+
+			<h4 class="title"><a href="<%= speaker.url %>"><%- speaker.title %></a></h4>
 		</div>
 		<% end %>
 	</div>
