@@ -54,6 +54,28 @@
           width: 280px;
           height: 110px;
         }
+
+        @include media('<tablet') {
+          &.level-platinum a {
+            width: 360px;
+            height: 120px;
+          }
+
+          &.level-gold a {
+            width: 310px;
+            height: 110px;
+          }
+
+          &.level-silver a {
+            width: 380px;
+            height: 130px;
+          }
+
+          &.level-supporter a {
+            width: 140px;
+            height: 64px;
+          }
+        }
     }
 }
 
