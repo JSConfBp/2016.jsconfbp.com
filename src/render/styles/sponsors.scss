@@ -1,0 +1,67 @@
+
+
+.sponsor-list {
+    padding: 0;
+    text-align: center;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+
+        &.level-platinum,
+        &.level-gold {
+          display: block;
+          text-align: center;
+        }
+
+        &.level-silver {
+          width: 48%;
+        }
+
+        &.level-supporter {
+          padding: 10px 15px 0;
+        }
+
+        a {
+          display: inline-block;
+          text-indent: -9999px;
+          background-repeat: no-repeat;
+          background-position: top center;
+          background-size: 100% auto;
+          cursor: pointer;
+
+        //  background-color: $green;
+        }
+
+        &.level-platinum a {
+          width: 550px;
+          height: 160px;
+        }
+
+        &.level-gold a {
+          width: 460px;
+          height: 140px;
+        }
+
+        &.level-silver a {
+          width: 380px;
+          height: 130px;
+        }
+
+        &.level-supporter a {
+          width: 280px;
+          height: 110px;
+        }
+    }
+}
+
+.sponsor-mozilla a { background-image: url(/images/sponsors/mozilla.png) }
+.sponsor-euedge a { background-image: url(/images/sponsors/euedge.png) }
+.sponsor-risingstack a { background-image: url(/images/sponsors/risingstack.png) }
+.sponsor-docler a { background-image: url(/images/sponsors/doclerholding.png) }
+.sponsor-npm a { background-image: url(/images/sponsors/npm.png) }
+.sponsor-ibm a { background-image: url(/images/sponsors/ibm.png) }
+.sponsor-dynatrace a { background-image: url(/images/sponsors/dynatrace.png) }
+.sponsor-google a { background-image: url(/images/sponsors/google.png) }
