@@ -81,6 +81,41 @@ layout: 'default'
 	</div>
 </div>
 
+
+<div class="section-header">
+	<h2 id="sponsors"><span class="left"></span>Sponsors<span class="right"></span></h2>
+</div>
+
+<div class="content">
+
+	<ul class="sponsor-list">
+		<li class="level-platinum sponsor-euedge"><a href="http://euedge.com/" target="_blank">EU Edge</a></li>
+		<li class="level-platinum sponsor-mozilla"><a href="https://www.mozilla.org/en-US/" target="_blank">Mozilla</a></li>
+
+		<li class="level-gold sponsor-risingstack"><a href="https://risingstack.com/" target="_blank">Risingstack</a></li>
+		<li class="level-gold sponsor-docler"><a href="https://www.doclerholding.com/en/main/" target="_blank">Docler Holding</a></li>
+
+		<!-- li class="level-silver sponsor-test"><a href="">Test</a></li>
+		<li class="level-silver sponsor-test"><a href="">Test</a></li -->
+
+		<li class="level-supporter sponsor-google"><a href="https://www.google.com/" target="_blank">Google</a></li>
+		<li class="level-supporter sponsor-npm"><a href="https://www.npmjs.com/" target="_blank">npm inc</a></li>
+		<li class="level-supporter sponsor-ibm"><a href="http://www.ibm.com/us-en/" target="_blank">IBM</a></li>
+		<li class="level-supporter sponsor-dynatrace"><a href="http://www.dynatrace.com/en/index.html" target="_blank">Dynatrace</a></li>
+
+	</ul>
+
+	<h3>We're always looking for sponsors!</h3>
+
+	<p>Help us make this experience for the attendees even more awesome!</p>
+	<p>We're always open for sponsorship and cooperation, drop us a mail:</p>
+	<p><a href="mailto:team@jsconfbp.com">team@jsconfbp.com</a></p>
+
+	<h3>Sponsorship Packages</h3>
+	<p>Check out our <a href="http://goo.gl/NSEzkf">Sponsorship Packages</a> for this year, in our brochure summarizing last years event</p>
+
+</div>
+
 <div class="section-header">
 	<h2 id="news"><span class="left"></span>News<span class="right"></span></h2>
 </div>
