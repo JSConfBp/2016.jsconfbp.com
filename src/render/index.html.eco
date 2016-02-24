@@ -102,6 +102,7 @@ layout: 'default'
 		<li class="level-supporter sponsor-npm"><a href="https://www.npmjs.com/" target="_blank">npm inc</a></li>
 		<!-- li class="level-supporter sponsor-ibm"><a href="http://www.ibm.com/us-en/" target="_blank">IBM</a></li -->
 		<li class="level-supporter sponsor-dynatrace"><a href="http://www.dynatrace.com/en/index.html" target="_blank">Dynatrace</a></li>
+		<li class="level-supporter sponsor-zalando"><a href="https://tech.zalando.com/" target="_blank">Zalando</a></li>
 
 	</ul>
 
