@@ -8,6 +8,10 @@ layout: default
 	<div class="org">
 		<h2 class=""><a href="<%= @document.url %>"><%- @document.title or @document.name %></a></h2>
 
+		<div class="img">
+			<img src="<%- @document.org_image %>" />
+		</div>
+
 		<%- @getWorkshopOrg(@document) %>
 
 		<%- @getWorkshopLocation(@document) %>
@@ -16,14 +20,27 @@ layout: default
 			<%- @document.apply_text %>
 		</a>
 
-		<div class="img">
-			<img src="<%- @document.org_image %>" />
-		</div>
-
 	</div>
 
 
 	<%- @content %>
+
+	<h3>About our workshops</h3>
+
+	<p>
+		Every attendee, who bought their ticket to JSConf Budapest 2016 can choose from
+		and sign up to several planned workshops, without any extra costs.
+		Registration is based on first-come first-serve basis, and requires your
+		JSConf Budapest ticket ID (something like this: AAAA-1)
+	</p>
+	<p>
+		These workshops will be all day long, so application is possible only for one per person.
+		If anyone registers for more, we'll count the first registration, and void the rest.
+	</p>
+	<p>
+		We will notify our attendees about available workshops, as soon as they become available,
+		and we'll also announce these on twitter and facebook, so be sure to follow us for updates!
+	</p>
 
 
 </div>

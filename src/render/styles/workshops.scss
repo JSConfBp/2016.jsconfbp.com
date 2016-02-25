@@ -4,7 +4,6 @@
 
 .workshop {
 
-
   .org {
     padding-left: 200px;
     position: relative;
@@ -60,7 +59,7 @@
 .workshops .workshop {
   position: relative;
   min-height: 120px;
-  margin-bottom: 22px;
+  margin-bottom: 42px;
   padding-left: 142px;
 
   .img {
@@ -71,6 +70,44 @@
       height: 120px;
     }
   }
+}
 
+@include media('<tablet') {
 
+  .workshops .workshop {
+    padding-left: 132px;
+
+    .img {
+      left: 10px;
+    }
+  }
+
+  .content.workshop {
+    .org {
+      padding-left: 0;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .img {
+        position: relative;
+        top: 6px;
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      .button {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      h4::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+  }
 }
