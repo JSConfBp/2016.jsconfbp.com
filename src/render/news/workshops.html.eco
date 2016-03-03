@@ -1,0 +1,35 @@
+---
+layout: 'content'
+title: 'Free Workshops available for every attendee'
+lead: 'May 10 will be a day full of workshops, which are available free for every ticket holder'
+socialImage: 'http://jsconfbp.com/images/og_image_workshops.jpg'
+postdate: '2016-01-10'
+---
+<p>
+On <strong>May 10 2016</strong> we plan to have a <strong>workshops day</strong>.
+</p>
+
+<p>
+  Every attendee who bought their ticket to JSConf Budapest 2016 can choose from and sign up to several planned workshop, without any extra costs.
+  We will notify our attendees about available workshops, as soon as they become available, and we'll also announce these on twitter and facebook, so be sure to follow us for updates!
+</p>
+
+<h4>Available workshops:
+<br /><br /></h4>
+
+	<div class="workshops clearfix">
+		<% for workshop in @getCollection('workshops').sortArray(order: 1): %>
+		<div class="workshop">
+			<div class="img">
+				<img src="<%- workshop.org_image %>" />
+			</div>
+			<h3>
+				<a href="<%= workshop.url %>"><%- workshop.title %></a>
+			</h3>
+			<%- @getIndexWorkshopOrg(workshop) %>
+			<p>
+				<%= workshop.lead %>
+			</p>
+		</div>
+		<% end %>
+	</div>
