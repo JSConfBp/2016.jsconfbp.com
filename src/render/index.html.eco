@@ -95,6 +95,7 @@ layout: 'default'
 		<li class="level-gold sponsor-risingstack"><a href="https://risingstack.com/" target="_blank">Risingstack</a></li>
 		<li class="level-gold sponsor-docler"><a href="https://www.doclerholding.com/en/main/" target="_blank">Docler Holding</a></li>
 
+		<li class="level-silver sponsor-jsfiddle"><a href="https://jsfiddle.net/" target="_blank">JSFiddle</a></li>
 		<!-- li class="level-silver sponsor-test"><a href="">Test</a></li>
 		<li class="level-silver sponsor-test"><a href="">Test</a></li -->
 

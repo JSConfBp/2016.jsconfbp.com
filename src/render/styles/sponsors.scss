@@ -11,13 +11,10 @@
         box-sizing: border-box;
 
         &.level-platinum,
-        &.level-gold {
+        &.level-gold,
+        &.level-silver {
           display: block;
           text-align: center;
-        }
-
-        &.level-silver {
-          width: 48%;
         }
 
         &.level-supporter {
@@ -46,9 +43,10 @@
         }
 
         &.level-silver a {
-          width: 380px;
-          height: 130px;
+          width: 400px;
+          height: 120px;
         }
+        &.level-silver.sponsor-jsfiddle a { height: 160px; }
 
         &.level-supporter a {
           width: 280px;
@@ -67,10 +65,11 @@
           }
 
           &.level-silver a {
-            width: 380px;
+            width: 280px;
             height: 130px;
           }
-
+          &.level-silver.sponsor-jsfiddle a { height: 110px; }
+          
           &.level-supporter a {
             width: 140px;
             height: 64px;
@@ -88,3 +87,4 @@
 .sponsor-dynatrace a { background-image: url(/images/sponsors/dynatrace.png) }
 .sponsor-google a { background-image: url(/images/sponsors/google.png) }
 .sponsor-zalando a { background-image: url(/images/sponsors/zalando.png) }
+.sponsor-jsfiddle a { background-image: url(/images/sponsors/jsfiddle.png) }
