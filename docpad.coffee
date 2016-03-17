@@ -125,7 +125,7 @@ docpadConfig =
 					</a>
 				</h3>
 				"""
-			else
+			else if page.org_name?
 				"""
 				<h3> By
 					<a href=\"#{page.org_url}\" target=\"_blank\">#{page.org_name}</a>
@@ -144,7 +144,7 @@ docpadConfig =
 					<a href=\"#{page.url}\" target=\"_blank\">#{page.org_name_2}</a>
 				</h4>
 				"""
-			else
+			else if page.org_name?
 				"""
 				<h4> By
 					<a href=\"#{page.url}\" target=\"_blank\">#{page.org_name}</a>
