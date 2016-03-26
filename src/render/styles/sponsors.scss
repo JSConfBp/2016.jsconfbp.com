@@ -27,6 +27,7 @@
           background-repeat: no-repeat;
           background-position: top center;
           background-size: 100% auto;
+          background-position: center;
           cursor: pointer;
 
         //  background-color: $green;
@@ -69,7 +70,7 @@
             height: 130px;
           }
           &.level-silver.sponsor-jsfiddle a { height: 110px; }
-          
+
           &.level-supporter a {
             width: 140px;
             height: 64px;
