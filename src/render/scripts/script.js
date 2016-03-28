@@ -3,7 +3,6 @@ function toggleMenu (e) {
   e.stopPropagation()
 
 $('main').css('width',$('body').width() )
-
   if (window.menuOpen) {
     setTimeout(function () {
       window.menuOpen = !window.menuOpen;
@@ -12,13 +11,10 @@ $('main').css('width',$('body').width() )
   } else {
     window.menuOpen = !window.menuOpen;
     document.querySelector('main').addEventListener('touchend', toggleMenu);
-
   }
 
   $('body').toggleClass('cbp-spmenu-push-toright');
   $('nav').toggleClass('cbp-spmenu-open');
-
-
 }
 
 $('nav')[0].addEventListener('transitionend', function () {
