@@ -16,6 +16,8 @@ layout: default
 
 		<%- @getWorkshopLocation(@document) %>
 
+		<%- @getWorkshopTime(@document) %>
+
 		<a href="<%- @document.apply_url %>" class="button blue bordered">
 			<%- @document.apply_text %>
 		</a>

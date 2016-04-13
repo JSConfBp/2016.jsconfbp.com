@@ -1,0 +1,64 @@
+---
+layout: 'content'
+title: 'Early Schedule'
+lead: "Here is how these few days in May will look like."
+socialImage: 'http://jsconfbp.com/images/og_image_earlyschedule.jpg'
+postdate: '2016-03-24'
+---
+
+<p>
+  This is a rough schedule of the week of CSSConf and JSConf Budapest, so you can fine-tune travel plans and other activities around these events.
+</p>
+
+<h3>May 10th, Tuesday - Workshops</h3>
+
+<p>This is our Workshop Day, check out our workshops: </p>
+
+<ul>
+<% for workshop in @getCollection('workshops').sortArray(order: 1): %>
+  <li>
+    <a href="<%= workshop.url %>"><%- workshop.title %></a>
+  </li>
+<% end %>
+</ul>
+
+<p>Locations and exact times are to be announced</p>
+
+<h3>May 11th, Wednesday - CSSConf Budapest</h3>
+
+<p>Debuting of <a href="http://cssconfbp.rocks/">CSSConf Budapest</a>!</p>
+
+<ul>
+  <li>Registration and breakfast at <strong>9:00</strong></li>
+  <li>Closing party starts at <strong>19:00</strong></li>
+</ul>
+
+<h3>May 12th, Thursday - JSConf Budapest Day One</h3>
+
+<ul>
+  <li>Registration and breakfast at <strong>8:00</strong></li>
+  <li>Dinner around <strong>17:30</strong></li>
+  <li>The <strong>last talk and the party</strong> starts at <strong>19:00 at the venue</strong></li>
+</ul>
+
+<p>Tickets for the last talk and the party itself will be available for sale soon! The party is free for everyone, who has a JSConf Budapest 2016 ticket, but we open this party for anyone who could not make the conference otherwise.</p>
+
+<p>
+  These tickets are a great opportunity for everyone in Budapest, to join us and experience the last talk, and celebrate with the JavaScript community.
+  If you attend the conference, you can also buy this for your significant other, who can join you for the party.
+</p>
+
+<h3>May 13th, Friday - JSConf Budapest Day Two</h3>
+
+<ul>
+  <li>Breakfast at <strong>9:00</strong></li>
+  <li>Closing remarks from <strong>16:30</strong></li>
+  <li>Afterparty starts at <strong>19:00, location TBA</strong></li>
+</ul>
+
+<h2>Budapest Guide</h2>
+
+<p>
+  <a href="/budapest-guide.html">We've prepared a guide for everyone</a>, with some short sightseening trips in Budapest, information about Airport access,
+  and mass transit. Also, <a href="https://www.google.com/maps/d/viewer?mid=zHr9ISKFB_d4.kka0YXqQ2ZoA">we're updating a map, with shops, ATMs, pharmacies and places for lunch/breakfast and pubs</a>.
+</p>

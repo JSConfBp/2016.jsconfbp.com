@@ -125,7 +125,7 @@ docpadConfig =
 					</a>
 				</h3>
 				"""
-			else
+			else if page.org_name?
 				"""
 				<h3> By
 					<a href=\"#{page.org_url}\" target=\"_blank\">#{page.org_name}</a>
@@ -144,7 +144,7 @@ docpadConfig =
 					<a href=\"#{page.url}\" target=\"_blank\">#{page.org_name_2}</a>
 				</h4>
 				"""
-			else
+			else if page.org_name?
 				"""
 				<h4> By
 					<a href=\"#{page.url}\" target=\"_blank\">#{page.org_name}</a>
@@ -162,6 +162,20 @@ docpadConfig =
 				<h4>
 					Location: <a href=\"#{page.location_url}\" target=\"_blank\">#{page.location_name}</a>
 					(<a href=\"#{page.location_map_url}\" target=\"_blank\">Show on map</a>)
+				</h4>
+				"""
+
+		getWorkshopTime: (page) ->
+			if page.time?
+				"""
+				<h4 class="time">
+					Date and time: May 10, #{page.time}
+				</h4>
+				"""
+			else
+				"""
+				<h4 class="time">
+					Date and time: May 10, TBA
 				</h4>
 				"""
 
