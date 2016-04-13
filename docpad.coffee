@@ -165,6 +165,20 @@ docpadConfig =
 				</h4>
 				"""
 
+		getWorkshopTime: (page) ->
+			if page.time?
+				"""
+				<h4 class="time">
+					Date and time: May 10, #{page.time}
+				</h4>
+				"""
+			else
+				"""
+				<h4 class="time">
+					Date and time: May 10, TBA
+				</h4>
+				"""
+
 	# =================================
 	# Collections
 
