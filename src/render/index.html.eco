@@ -91,6 +91,7 @@ layout: 'default'
 	<ul class="sponsor-list">
 		<li class="level-platinum sponsor-euedge"><a href="http://euedge.com/" target="_blank">EU Edge</a></li>
 		<li class="level-platinum sponsor-mozilla"><a href="https://www.mozilla.org/en-US/" target="_blank">Mozilla</a></li>
+		<li class="level-platinum sponsor-zalando"><a href="https://tech.zalando.com/" target="_blank">Zalando</a></li>
 
 		<li class="level-gold sponsor-risingstack"><a href="https://trace.risingstack.com/" target="_blank">trace by Risingstack</a></li>
 		<li class="level-gold sponsor-docler"><a href="https://www.doclerholding.com/en/main/" target="_blank">Docler Holding</a></li>
@@ -103,7 +104,7 @@ layout: 'default'
 		<li class="level-supporter sponsor-npm"><a href="https://www.npmjs.com/" target="_blank">npm inc</a></li>
 		<li class="level-supporter sponsor-ibmwatson"><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/" target="_blank">IBM Watson</a></li>
 		<li class="level-supporter sponsor-dynatrace"><a href="http://www.dynatrace.com/en/index.html" target="_blank">Dynatrace</a></li>
-		<li class="level-supporter sponsor-zalando"><a href="https://tech.zalando.com/" target="_blank">Zalando</a></li>
+
 
 	</ul>
 
