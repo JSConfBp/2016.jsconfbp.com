@@ -95,8 +95,9 @@ layout: 'default'
 
 		<li class="level-gold sponsor-risingstack"><a href="https://trace.risingstack.com/" target="_blank">trace by Risingstack</a></li>
 		<li class="level-gold sponsor-docler"><a href="https://www.doclerholding.com/en/main/" target="_blank">Docler Holding</a></li>
+		<li class="level-gold sponsor-epam"><a href="https://www.epam.com/" target="_blank">Epam</a></li>
 		<li class="level-gold sponsor-bloomberg"><a href="http://www.techatbloomberg.com" target="_blank">Bloomberg</a></li>
-
+		<li class="level-gold sponsor-booking"><a href="http://www.booking.com/" target="_blank">Booking.com</a></li>
 		<li class="level-silver sponsor-jsfiddle"><a href="https://jsfiddle.net/" target="_blank">JSFiddle</a></li>
 		<!-- li class="level-silver sponsor-test"><a href="">Test</a></li>
 		<li class="level-silver sponsor-test"><a href="">Test</a></li -->
@@ -105,8 +106,7 @@ layout: 'default'
 		<li class="level-supporter sponsor-npm"><a href="https://www.npmjs.com/" target="_blank">npm inc</a></li>
 		<li class="level-supporter sponsor-ibmwatson"><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/" target="_blank">IBM Watson</a></li>
 		<li class="level-supporter sponsor-dynatrace"><a href="http://www.dynatrace.com/en/index.html" target="_blank">Dynatrace</a></li>
-
-
+		<li class="level-supporter sponsor-ustream"><a href="https://www.ustream.tv/our-company/career/budapest" target="_blank">Ustream</a></li>
 	</ul>
 
 	<h3>We're always looking for sponsors!</h3>
