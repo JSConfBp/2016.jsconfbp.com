@@ -104,6 +104,7 @@ layout: 'default'
 
 		<li class="level-supporter sponsor-google"><a href="https://developers.google.com/web/" target="_blank">Google Chrome</a></li>
 		<li class="level-supporter sponsor-npm"><a href="https://www.npmjs.com/" target="_blank">npm inc</a></li>
+		<li class="level-supporter sponsor-ibm"><a href="https://www.ibm.com/" target="_blank">IBM</a></li>
 		<li class="level-supporter sponsor-ibmwatson"><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/" target="_blank">IBM Watson</a></li>
 		<li class="level-supporter sponsor-dynatrace"><a href="http://www.dynatrace.com/en/index.html" target="_blank">Dynatrace</a></li>
 		<li class="level-supporter sponsor-ustream"><a href="https://www.ustream.tv/our-company/career/budapest" target="_blank">Ustream</a></li>
