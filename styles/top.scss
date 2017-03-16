@@ -1,0 +1,124 @@
+#top {
+	position: relative;
+	z-index: 1;
+	height: 383px;
+	color: $black;
+}
+
+#top .content {
+	//padding: 60px 0 0px;
+	padding: 110px 0 0px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	box-sizing: border-box;
+	height: 383px;
+	/*background:
+		radial-gradient(ellipse at 55% 40%, rgb(255, 255, 255) 0%,rgba(255, 255, 255,.5) 40%,rgba(53,128,194,0) 80%),
+		radial-gradient(ellipse at bottom center, rgb(255, 255, 255) 0%,rgba(255, 255, 255,.2) 40%,rgba(53,128,194,0) 60%);
+		*/
+}
+
+#top .addition {
+	display: block;
+	text-transform: uppercase;
+	font-size: 36px;
+	color: $white;
+}
+
+
+#top .addition > * {
+	vertical-align: middle;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+#top .addition .yellow {
+	color: #f3df49;
+}
+
+#top .addition .sign {
+	font-size: 60px;
+	font-weight: 300;
+}
+
+#top .addition b {
+	font-weight: bold;
+	margin: 0 20px;
+	white-space: nowrap;
+}
+
+#top .addition a {
+	display: inline-block;
+}
+#top .addition svg {
+	width: 130px;
+	margin-left: 20px;
+}
+
+#top .buttons {
+	margin-top: 40px;
+}
+
+#vis {
+	width: 100%;
+	height: 463px;
+	position: absolute;
+	top: -80px;
+	z-index: 1;
+
+	background: url(/images/bg-init-blue.jpg);
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+
+
+
+@include media('<tablet') {
+
+
+  #top .buttons {
+  	margin-top: 24px;
+  }
+
+  #top .content {
+		padding-top: 40px;
+    //background: radial-gradient(ellipse at bottom center, #ffffff 0%, rgba(255, 255, 255, 0.6) 40%, rgba(53, 128, 194, 0) 80%);
+  }
+  #top .addition {
+  	width: 220px;
+  	margin: 0 auto;
+		position: relative;
+		padding-top: 146px;
+  }
+	#top .addition > * {
+		line-height: 40px;
+	}
+  #top .addition a {
+    display: block;
+    height: 130px;
+    margin-bottom: 16px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -65px;
+  }
+	#top .addition .sign {
+		display: none;
+	}
+  #top .addition svg {
+    width: 130px;
+		margin: 0;
+  }
+  #top .jsconf {
+    font-size: 38px;
+  }
+	#top h2 span {
+		white-space: nowrap;
+	}
+
+	#vis {
+	  background-size: auto 100%;
+	}
+}

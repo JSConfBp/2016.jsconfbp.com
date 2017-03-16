@@ -1,0 +1,22 @@
+#footer {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 12px;
+  line-height: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    top: -25px;
+    margin-left: -22px;
+    left: 50%;
+    border-width: 20px 20px 0 20px;
+    border-color: #3580C2 transparent transparent transparent;
+    opacity: .05;
+  }
+}

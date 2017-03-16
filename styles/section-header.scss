@@ -1,0 +1,93 @@
+#content .section-header {
+	margin: 90px 0 45px;
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+}
+
+#content .section-header h2 {
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	color: $blue;
+	box-sizing: border-box;
+}
+
+#content .section-header h2 span {
+	display: block;
+	position: absolute;
+	width: 84px;
+	height: 84px;
+	top: 50%;
+	margin-top: -42px;
+}
+
+#content .section-header h2 span:before,
+#content .section-header h2 span:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#content .section-header .left {
+	left: -84px;
+}
+
+#content .section-header .left:before {
+	top: 0;
+	left: 0;
+	border-width: 42px 0 42px 42px;
+	border-color: transparent transparent transparent #007bff;
+	opacity: .2;
+}
+
+#content .section-header .left:after {
+	border-width: 0 42px 42px 42px;
+	border-color: transparent transparent #007bff transparent;
+	opacity: .05;
+	bottom: 0;
+	left: 0;
+}
+
+#content .section-header .right {
+	right: -84px;
+}
+
+#content .section-header .right:before {
+	top: 0;
+	left: 0;
+	border-width: 42px 42px 0 42px;
+	border-color: $blue transparent transparent transparent;
+	opacity: .05;
+}
+
+#content .section-header .right:after {
+	border-width: 42px 42px 42px 0;
+	border-color: transparent $blue transparent transparent;
+	opacity: .10;
+	bottom: 0;
+	right: 0;
+}
+
+
+@include media('<tablet') {
+
+	#content .section-header h2 {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#content .section-header .left {
+		left: 0px;
+	}
+
+	#content .section-header .right {
+		right: 0px;
+	}
+
+
+}
