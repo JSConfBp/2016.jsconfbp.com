@@ -1,5 +1,7 @@
 # JSConf Budapest 2016
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/JSConfBp/2016.jsconfbp.com.svg)](https://greenkeeper.io/)
+
 ### May 12-13, 2016
 
 JSConf Budapest is a JSConf family member
